@@ -54,7 +54,21 @@ npx ts-node experiments/runner.ts --config experiments/configs/baseline_single_a
 - Command `Triage Inbox` + settings tab in `main.ts`
 - Prompt in `prompts/single_agent.system.md`
 
+## Тесты
+```bash
+npm test        # run tests
+npm run test:watch
+npm run typecheck
+npm run check   # typecheck + test
+```
+- Покрыто: StubEngine, FsVaultAdapter, SingleAgentEngine, MultiAgentEngine (parallel), parseAgentJson, AggregatorAgent, MetricsCollector
+- Тесты не делают реальных LLM-вызовов; `obsidian` замокан в `tests/setup.ts`
+- Помечены `todo`: `sequential`, `debate`, `useMessaging` (MultiAgentEngine), `ObsidianVaultAdapter` (smoke-тест только в Obsidian)
+
 ## TODO
-- MAS implementation (`MultiAgentEngine`, agents) — next stage
+- Implement sequential/debate architectures
+- Implement messaging/shared memory
+- Improve LLM parsing
 - Full experiment runner logic
 - Error analysis / real experiments
+

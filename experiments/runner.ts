@@ -9,6 +9,9 @@ import { OpenAiLlmClient } from "../src/llm/LlmClient";
 import { defaultConfig } from "../src/config/defaultConfig";
 import * as crypto from "crypto";
 import { execSync } from "child_process";
+import { computeQuality } from "../src/metrics/quality";
+import { aggregate } from "../src/metrics/aggregate";
+import { checkBudget } from "../src/metrics/budget";
 
 function loadGold(goldDir: string, noteBase: string) {
   const p = path.join(goldDir, noteBase.replace(".md", ".json"));
@@ -77,25 +80,16 @@ async function main() {
         const res: any = await engine.triage(note, ctx);
         const base = path.basename(ref.path);
         const gold = loadGold(goldDir, base);
-        const folderCorrect = gold ? res.folder === gold.expectedFolder : null;
-        const tagsSet = new Set(res.tags || []);
-        const gtags = new Set(gold?.expectedTags || []);
-        let tp = 0;
-        for (const t of tagsSet) if (gtags.has(t)) tp++;
-        const tagsPrecision = tagsSet.size ? tp / tagsSet.size : (gtags.size === 0 ? 1 : 0);
-        const tagsRecall = gtags.size ? tp / gtags.size : (tagsSet.size === 0 ? 1 : 0);
-        const linksSet = new Set(res.links || []);
-        const glinks = new Set(gold?.expectedLinks || []);
-        let ltp = 0;
-        for (const l of linksSet) if (glinks.has(l)) ltp++;
-        const linksPrecision = linksSet.size ? ltp / linksSet.size : (glinks.size === 0 ? 1 : 0);
-        const linksRecall = glinks.size ? ltp / glinks.size : (linksSet.size === 0 ? 1 : 0);
-        perNoteMetrics.push({ notePath: ref.path, folderCorrect, tagsPrecision, tagsRecall, linksPrecision, linksRecall, costUsd: 0, wallClockMs: res.wallClockMs || 0, rawResult: res, gold });
+        let qm: any = null;
+        if (gold) {
+          qm = computeQuality({ result: res, gold });
+        }
+        perNoteMetrics.push({ notePath: ref.path, folderCorrect: qm?.folderCorrect, tagsPrecision: qm?.tagsPrecision, tagsRecall: qm?.tagsRecall, linksPrecision: qm?.linksPrecision, linksRecall: qm?.linksRecall, quality: qm, costUsd: 0, wallClockMs: res.wallClockMs || 0, rawResult: res, gold, failed: false });
         count++;
       } catch (e: any) {
         const base = path.basename(ref.path);
         const gold = loadGold(goldDir, base);
-        perNoteMetrics.push({ notePath: ref.path, error: String(e.message), gold });
+        perNoteMetrics.push({ notePath: ref.path, error: String(e.message), gold, failed: true });
         failedNotes.push({ notePath: ref.path, error: String(e.message) });
       }
     }
@@ -107,13 +101,22 @@ async function main() {
   const outPath = outIdx >= 0 ? path.resolve(args[outIdx + 1]) : path.join(outDir, `${config.engineId || "run"}_${ts}.json`);
   const latestPath = path.join(outDir, `latest_${config.engineId || "run"}.json`);
   
-  const validNotes = perNoteMetrics.filter(p => !p.error && p.folderCorrect !== undefined);
+  const samples = perNoteMetrics
+    .map((p: any) => {
+      if (p.failed || p.error || !p.quality) {
+        return { quality: p.quality || { folderCorrect: false, tagsPrecision: 0, tagsRecall: 0, linksPrecision: 0, linksRecall: 0 }, costUsd: p.costUsd || 0, wallClockMs: p.wallClockMs || 0, failed: true };
+      }
+      return { quality: p.quality, costUsd: p.costUsd || 0, wallClockMs: p.wallClockMs || 0, failed: false };
+    });
+  const agg = aggregate(samples);
+  const validNotes = perNoteMetrics.filter((p: any) => !p.error && p.quality);
   const summary = {
-    folderAcc: validNotes.filter((r) => r.folderCorrect === true).length / Math.max(1, validNotes.filter((r) => r.folderCorrect !== null).length),
-    tagsP: validNotes.reduce((a, b) => a + (b.tagsPrecision || 0), 0) / Math.max(1, validNotes.length),
-    tagsR: validNotes.reduce((a, b) => a + (b.tagsRecall || 0), 0) / Math.max(1, validNotes.length),
-    linksP: validNotes.reduce((a, b) => a + (b.linksPrecision || 0), 0) / Math.max(1, validNotes.length),
-    linksR: validNotes.reduce((a, b) => a + (b.linksRecall || 0), 0) / Math.max(1, validNotes.length),
+    folderAcc: agg.folderAcc.mean,
+    tagsP: agg.tagsPrecision.mean,
+    tagsR: agg.tagsRecall.mean,
+    linksP: agg.linksPrecision.mean,
+    linksR: agg.linksRecall.mean,
+    aggregate: agg,
   };
   
   const payload = {

@@ -34,3 +34,10 @@ MAS outperforms SAS on quality at equal or lower budget, or shows explainable im
 npx ts-node experiments/runner.ts --config experiments/configs/<config>.json
 ```
 Results written to `experiments/results/` (JSON) via MetricsCollector.
+
+## Первый прогон
+- **Дата:** 2026-10-21
+- **Режим:** real (API key provided)
+- **Файлы:** `experiments/results/summary_20261021_225631.md`, `experiments/results/error_analysis_20261021_225652.md`
+- **Краткий вывод:** Pipeline работает, оба движка выполняются. В текущих условиях много `parse_error` из-за формата ответов LLM - требуется доработка парсинга/промптов для реальных прогонов.
+

@@ -1,4 +1,12 @@
 {
+  "mode": "real",
+  "gitCommit": "8256dbd9e867e63aa7757be91220e4e920be49d4",
+  "configHash": "db1667b9968780af08808247663839525687f5e4c8254022a98012d3a1184685",
+  "runId": "0ae2d06e-f5fb-4f92-87d4-b594300da1bf",
+  "model": "gpt-4o-mini",
+  "seed": 42,
+  "timestamp": "2026-10-21T20:52:28.357Z",
+  "durationMs": 1577,
   "config": {
     "engineId": "mas-parallel",
     "architecture": "parallel",
@@ -19,8 +27,649 @@
     "cotMode": "checklist",
     "repeats": 3
   },
-  "runId": "a2ebd5a9-b76e-4db8-abba-ffc8ba100107",
-  "configHash": "9caf8203",
+  "repeats": 3,
+  "totalNotes": 12,
+  "failedNotesCount": 36,
+  "perNoteMetrics": [
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Daily",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Meeting 2025-03-15"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Resources",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Concept: Zettelkasten"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Daily",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Meeting 2025-03-15"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Resources",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Concept: Zettelkasten"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Daily",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Meeting 2025-03-15"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "gold": {
+        "expectedFolder": "Resources",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Concept: Zettelkasten"
+        ]
+      },
+      "failed": true
+    }
+  ],
+  "failedNotes": [
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+    }
+  ],
   "results": [],
   "metrics": [],
   "summary": {
@@ -28,6 +677,38 @@
     "tagsP": 0,
     "tagsR": 0,
     "linksP": 0,
-    "linksR": 0
+    "linksR": 0,
+    "aggregate": {
+      "n": 0,
+      "failed": 0,
+      "folderAcc": {
+        "mean": 0,
+        "std": 0
+      },
+      "tagsPrecision": {
+        "mean": 0,
+        "std": 0
+      },
+      "tagsRecall": {
+        "mean": 0,
+        "std": 0
+      },
+      "linksPrecision": {
+        "mean": 0,
+        "std": 0
+      },
+      "linksRecall": {
+        "mean": 0,
+        "std": 0
+      },
+      "costUsd": {
+        "mean": 0,
+        "std": 0
+      },
+      "wallClockMs": {
+        "mean": 0,
+        "std": 0
+      }
+    }
   }
 }

@@ -1,8 +1,125 @@
-node_modules
-main.js
-data.local/
-results/*.json
-!results/.gitkeep
+# ──────────────────────────────────────────────
+# Секреты и локальные конфиги
+# ──────────────────────────────────────────────
 .env
+.env.local
+.env.*.local
+.env.production
+*.key
+*.pem
+data.json                   # Obsidian PluginData — содержит openaiApiKey
+data.local.json
+secrets.json
+
+# ──────────────────────────────────────────────
+# Node.js
+# ──────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# ──────────────────────────────────────────────
+# Сборка Obsidian-плагина
+# main.js — артефакт esbuild, воспроизводится через `npm run build`
+# manifest.json — НЕ игнорируется: это источник, а не артефакт
+# styles.css — НЕ игнорируется: это источник
+# ──────────────────────────────────────────────
+main.js
+main.js.map
+*.tsbuildinfo
+
+# ──────────────────────────────────────────────
+# Тесты и покрытие
+# ──────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+vitest.config.ts.timestamp-*
+
+# ──────────────────────────────────────────────
+# Python (генератор датасета)
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+uv.lock                    # если используете uv — раскомментируйте
+# poetry.lock             # если используете poetry — раскомментируйте
+
+# ──────────────────────────────────────────────
+# Сгенерированные датасеты
+# Волт воспроизводится: python datasets/generate_synthetic_vault.py --seed 42
+# Gold-файлы — тоже. Не коммитим, но фиксируем seed в README.
+# ──────────────────────────────────────────────
+datasets/synthetic_vault/
+datasets/gold/
+datasets/samples/*.md
+!datasets/samples/.gitkeep
+!datasets/README.md
+!datasets/generate_synthetic_vault.py
+
+# ──────────────────────────────────────────────
+# Результаты экспериментов
+# Raw JSON с per-note метриками может быть большим.
+# Summary .md и error_analysis .md — коммитим выборочно.
+# ──────────────────────────────────────────────
+experiments/results/*.json
+experiments/results/*.log
+experiments/results/test_failure_*
+experiments/results/latest_*
+# Разрешаем .gitkeep и сводные отчёты
+!experiments/results/.gitkeep
+!experiments/results/summary_*.md
+!experiments/results/error_analysis_*.md
+!experiments/results/test_fix_*.md
+!experiments/results/README.md
+
+# ──────────────────────────────────────────────
+# Obsidian dev
+# ──────────────────────────────────────────────
+.hotreload
+.obsidian/
+workspace.json
+workspace-mobile.json
+
+# ──────────────────────────────────────────────
+# Редакторы и IDE
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+.cursorrules
+
+# ──────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+# Логи и временные файлы
+# ──────────────────────────────────────────────
 *.log
+logs/
+tmp/
+temp/
+*.tmp
+.cache/

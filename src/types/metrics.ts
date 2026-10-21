@@ -1,3 +1,5 @@
+import { QualityMetrics } from "../metrics/quality";
+
 export interface RunMetrics {
   notePath: string;
   engineId: string;
@@ -5,7 +7,7 @@ export interface RunMetrics {
   outputTokens: number;
   costUsd: number;
   wallClockMs: number;
-  quality: "unknown" | "measured" | number;
+  quality: "unknown" | "measured" | number | QualityMetrics;
   timestamp: string;
   runId?: string;
   configHash?: string;

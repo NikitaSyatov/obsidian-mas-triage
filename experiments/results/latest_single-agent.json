@@ -1,12 +1,12 @@
 {
   "mode": "real",
-  "gitCommit": "unknown",
+  "gitCommit": "8256dbd9e867e63aa7757be91220e4e920be49d4",
   "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-  "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+  "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
   "model": "gpt-4o-mini",
   "seed": 42,
-  "timestamp": "2026-10-21T19:54:10.449Z",
-  "durationMs": 1238,
+  "timestamp": "2026-10-21T20:53:35.709Z",
+  "durationMs": 1194,
   "config": {
     "engineId": "single-agent",
     "architecture": "single",
@@ -33,7 +33,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
@@ -46,7 +47,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
@@ -59,7 +61,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
@@ -72,7 +75,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
@@ -85,7 +89,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
@@ -96,7 +101,8 @@
         "expectedLinks": [
           "Meeting 2025-03-15"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
@@ -109,7 +115,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
@@ -122,7 +129,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
@@ -135,7 +143,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
@@ -148,7 +157,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
@@ -161,7 +171,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
@@ -172,7 +183,8 @@
         "expectedLinks": [
           "Concept: Zettelkasten"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
@@ -185,7 +197,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
@@ -198,7 +211,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
@@ -211,7 +225,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
@@ -224,7 +239,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
@@ -237,7 +253,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
@@ -248,7 +265,8 @@
         "expectedLinks": [
           "Meeting 2025-03-15"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
@@ -261,7 +279,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
@@ -274,7 +293,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
@@ -287,7 +307,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
@@ -300,7 +321,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
@@ -313,7 +335,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
@@ -324,7 +347,8 @@
         "expectedLinks": [
           "Concept: Zettelkasten"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
@@ -337,7 +361,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
@@ -350,7 +375,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
@@ -363,7 +389,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
@@ -376,7 +403,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
@@ -389,7 +417,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
@@ -400,7 +429,8 @@
         "expectedLinks": [
           "Meeting 2025-03-15"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
@@ -413,7 +443,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
@@ -426,7 +457,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
@@ -439,7 +471,8 @@
         "expectedLinks": [
           "Project Beta"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
@@ -452,7 +485,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
@@ -465,7 +499,8 @@
         "expectedLinks": [
           "Project Alpha"
         ]
-      }
+      },
+      "failed": true
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
@@ -476,7 +511,8 @@
         "expectedLinks": [
           "Concept: Zettelkasten"
         ]
-      }
+      },
+      "failed": true
     }
   ],
   "failedNotes": [
@@ -633,10 +669,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 361.5212730001658,
+      "wallClockMs": 265.3652669992298,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.574Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.782Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -647,10 +683,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 34.80575200077146,
+      "wallClockMs": 28.465677000582218,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.609Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.811Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -661,10 +697,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 31.036624999716878,
+      "wallClockMs": 31.752724999561906,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.640Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.843Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -675,10 +711,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 25.94808099977672,
+      "wallClockMs": 26.645592000335455,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.667Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.870Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -689,10 +725,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 29.975895000621676,
+      "wallClockMs": 29.54599400050938,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.698Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.901Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -703,10 +739,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 27.553283999674022,
+      "wallClockMs": 27.71082399971783,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.726Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.929Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -717,10 +753,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.198340999893844,
+      "wallClockMs": 25.197626000270247,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.749Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.954Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -731,10 +767,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.3315949998796,
+      "wallClockMs": 34.46287599951029,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.773Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:34.989Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -745,10 +781,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 27.234255000017583,
+      "wallClockMs": 31.92481500096619,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.801Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.022Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -759,10 +795,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 24.887630000710487,
+      "wallClockMs": 26.411203000694513,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.827Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.051Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -773,10 +809,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 25.33823799993843,
+      "wallClockMs": 26.131554000079632,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.853Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.078Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -787,10 +823,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 28.878569000400603,
+      "wallClockMs": 32.88668099977076,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.882Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.111Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -801,10 +837,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 24.572234000079334,
+      "wallClockMs": 24.745049001649022,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.907Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.136Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -815,10 +851,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 22.787402000278234,
+      "wallClockMs": 24.31063200160861,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.930Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.161Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -829,10 +865,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.640847000293434,
+      "wallClockMs": 24.159493999555707,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.954Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.185Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -843,10 +879,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 26.718555999919772,
+      "wallClockMs": 31.033071000128984,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:09.981Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.218Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -857,10 +893,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 26.41126099973917,
+      "wallClockMs": 25.227797999978065,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.008Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.243Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -871,10 +907,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 21.172421999275684,
+      "wallClockMs": 26.257828999310732,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.029Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.270Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -885,10 +921,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.484407000243664,
+      "wallClockMs": 26.112277999520302,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.053Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.297Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -899,10 +935,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.2095150006935,
+      "wallClockMs": 22.460934000089765,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.076Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.320Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -913,10 +949,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.313717000186443,
+      "wallClockMs": 22.901776999235153,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.100Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.343Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -927,10 +963,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 28.22989600058645,
+      "wallClockMs": 21.541532998904586,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.129Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.365Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -941,10 +977,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 24.330308999866247,
+      "wallClockMs": 23.320830000564456,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.153Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.389Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -955,10 +991,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 20.363954000175,
+      "wallClockMs": 25.06492600031197,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.174Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.414Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -969,10 +1005,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 22.071961999870837,
+      "wallClockMs": 25.749099999666214,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.196Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.440Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -983,10 +1019,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 23.114533999934793,
+      "wallClockMs": 28.36594199948013,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.220Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.469Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -997,10 +1033,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 26.789514999836683,
+      "wallClockMs": 22.18547699972987,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.247Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.492Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1011,10 +1047,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 19.252379999496043,
+      "wallClockMs": 23.45772000029683,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.267Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.516Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1025,10 +1061,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 22.137611000798643,
+      "wallClockMs": 21.17807500064373,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.289Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.537Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1039,10 +1075,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 22.792710999958217,
+      "wallClockMs": 23.7105480004102,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.313Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.562Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1053,10 +1089,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 25.196883999742568,
+      "wallClockMs": 23.823692001402378,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.338Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.586Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1067,10 +1103,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 20.623480000533164,
+      "wallClockMs": 23.59265499934554,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.359Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.610Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1081,10 +1117,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 22.336795000359416,
+      "wallClockMs": 21.311613000929356,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.382Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.632Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1095,10 +1131,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 20.80506299994886,
+      "wallClockMs": 24.281577998772264,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.403Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.657Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1109,10 +1145,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 20.820987000130117,
+      "wallClockMs": 24.29778099991381,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.424Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.681Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1123,10 +1159,10 @@
       "inputTokens": 0,
       "outputTokens": 0,
       "costUsd": 0,
-      "wallClockMs": 24.403220999985933,
+      "wallClockMs": 23.183101000264287,
       "quality": "unknown",
-      "timestamp": "2026-10-21T19:54:10.448Z",
-      "runId": "600a5ae3-82df-48eb-aac9-e8aa53f6ab73",
+      "timestamp": "2026-10-21T20:53:35.705Z",
+      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
       "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
       "model": "gpt-4o-mini",
       "seed": 42
@@ -1137,6 +1173,38 @@
     "tagsP": 0,
     "tagsR": 0,
     "linksP": 0,
-    "linksR": 0
+    "linksR": 0,
+    "aggregate": {
+      "n": 36,
+      "failed": 36,
+      "folderAcc": {
+        "mean": 0,
+        "std": 0
+      },
+      "tagsPrecision": {
+        "mean": 0,
+        "std": 0
+      },
+      "tagsRecall": {
+        "mean": 0,
+        "std": 0
+      },
+      "linksPrecision": {
+        "mean": 0,
+        "std": 0
+      },
+      "linksRecall": {
+        "mean": 0,
+        "std": 0
+      },
+      "costUsd": {
+        "mean": 0,
+        "std": 0
+      },
+      "wallClockMs": {
+        "mean": 0,
+        "std": 0
+      }
+    }
   }
 }

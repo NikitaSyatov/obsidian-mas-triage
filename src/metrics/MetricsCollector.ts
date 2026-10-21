@@ -1,5 +1,6 @@
 import { RunMetrics } from "../types/metrics";
 import { defaultConfig } from "../config/defaultConfig";
+import { computeCost, getPricingFor } from "./cost";
 
 export class MetricsCollector {
   private startTime?: number;
@@ -19,10 +20,19 @@ export class MetricsCollector {
   }
 
   end(usage: { inputTokens: number; outputTokens: number }, extra?: any): RunMetrics {
-    const wallClockMs = this.startTime ? performance.now() - this.startTime : 0;
-    const priceIn = defaultConfig.prices?.inputPer1M ?? 0.15;
-    const priceOut = defaultConfig.prices?.outputPer1M ?? 0.6;
-    const costUsd = (usage.inputTokens * priceIn + usage.outputTokens * priceOut) / 1_000_000;
+    if (this.startTime === undefined) {
+      throw new Error("MetricsCollector.end called without start");
+    }
+    const wallClockMs = performance.now() - this.startTime;
+    let costUsd = 0;
+    try {
+      const pricing = getPricingFor(this.runMeta.model || defaultConfig.model);
+      costUsd = computeCost(usage, pricing);
+    } catch (e) {
+      const priceIn = defaultConfig.prices?.inputPer1M ?? 0.15;
+      const priceOut = defaultConfig.prices?.outputPer1M ?? 0.6;
+      costUsd = Math.round(((usage.inputTokens * priceIn + usage.outputTokens * priceOut) / 1_000_000) * 1000000) / 1000000;
+    }
 
     const metric: RunMetrics = {
       notePath: this.notePath || "",
