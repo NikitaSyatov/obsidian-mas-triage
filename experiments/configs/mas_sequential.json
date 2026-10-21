@@ -1,0 +1,15 @@
+{
+  "engineId": "mas_sequential",
+  "architecture": "sequential",
+  "model": "gpt-4o-mini",
+  "maxTokensPerNote": 1024,
+  "totalBudgetUsd": 5.0,
+  "seed": 12345,
+  "vaultPath": "./datasets/samples",
+  "ablations": {
+    "useSharedMemory": true,
+    "useMessaging": true,
+    "enabledAgents": ["classifier", "linker", "extractor"]
+  },
+  "repeats": 3
+}

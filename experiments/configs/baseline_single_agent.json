@@ -1,0 +1,11 @@
+{
+  "engineId": "single-agent",
+  "architecture": "single",
+  "model": "gpt-4o-mini",
+  "maxTokensPerNote": 1024,
+  "totalBudgetUsd": 5.0,
+  "seed": 42,
+  "vaultPath": "./datasets/synthetic_vault",
+  "ablations": {},
+  "repeats": 3
+}

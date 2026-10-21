@@ -1,0 +1,8 @@
+node_modules
+main.js
+data.local/
+results/*.json
+!results/.gitkeep
+.env
+.DS_Store
+*.log

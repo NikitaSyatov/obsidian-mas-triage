@@ -1,0 +1,15 @@
+{
+  "engineId": "ablation_no_shared_memory",
+  "architecture": "parallel",
+  "model": "gpt-4o-mini",
+  "maxTokensPerNote": 1024,
+  "totalBudgetUsd": 5.0,
+  "seed": 12345,
+  "vaultPath": "./datasets/samples",
+  "ablations": {
+    "useSharedMemory": false,
+    "useMessaging": true,
+    "enabledAgents": ["classifier", "linker", "extractor"]
+  },
+  "repeats": 3
+}

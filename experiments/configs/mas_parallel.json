@@ -1,0 +1,16 @@
+{
+  "engineId": "mas-parallel",
+  "architecture": "parallel",
+  "model": "gpt-4o-mini",
+  "maxTokensPerNote": 1024,
+  "totalBudgetUsd": 5.0,
+  "seed": 42,
+  "vaultPath": "./datasets/synthetic_vault",
+  "ablations": {
+    "useSharedMemory": true,
+    "useMessaging": false,
+    "enabledAgents": ["classifier", "linker", "extractor"]
+  },
+  "cotMode": "checklist",
+  "repeats": 3
+}

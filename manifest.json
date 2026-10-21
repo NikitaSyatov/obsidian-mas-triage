@@ -1,0 +1,7 @@
+{
+	"id": "obsidian-mas-triage",
+	"name": "MAS Triage",
+	"version": "0.0.1",
+	"minAppVersion": "1.5.0",
+	"description": "MAS vs SAS inbox triage skeleton (no logic)"
+}

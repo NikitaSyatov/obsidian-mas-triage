@@ -1,0 +1,2 @@
+# Concept: Zettelkasten
+Linking ideas.

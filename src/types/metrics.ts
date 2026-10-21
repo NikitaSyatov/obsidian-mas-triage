@@ -1,0 +1,17 @@
+export interface RunMetrics {
+  notePath: string;
+  engineId: string;
+  inputTokens: number;
+  outputTokens: number;
+  costUsd: number;
+  wallClockMs: number;
+  quality: "unknown" | "measured" | number;
+  timestamp: string;
+  runId?: string;
+  configHash?: string;
+  model?: string;
+  seed?: number;
+  agentBreakdown?: any[];
+  useMessaging?: boolean;
+  useSharedMemory?: boolean;
+}
