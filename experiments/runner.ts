@@ -59,7 +59,7 @@ async function main() {
   metrics.setRunMeta({ runId, configHash, model, seed });
 
   // If pipeline-smoke, force stub for non-real runs? But we need to compare both - better to use config as-is but note mode
-  const llm = new OpenAiLlmClient(process.env.OPENAI_API_KEY || "", undefined, model);
+  const llm = new OpenAiLlmClient(process.env.OPENAI_API_KEY || process.env.DEEPSEEK_API_KEY || "", process.env.LLM_BASE_URL || "https://api.deepseek.com/chat/completions", model || "deepseek-chat");
   const engine = createEngine(config, { llm, metrics });
 
   const notes = await vault.listInboxNotes();

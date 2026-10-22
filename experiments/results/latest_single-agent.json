@@ -1,30 +1,57 @@
 {
   "mode": "real",
-  "gitCommit": "8256dbd9e867e63aa7757be91220e4e920be49d4",
-  "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-  "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-  "model": "gpt-4o-mini",
+  "gitCommit": "0649bc3d82a40bd4fbde8ce893352f6ec5b1d8e6",
+  "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+  "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+  "model": "deepseek-chat",
   "seed": 42,
-  "timestamp": "2026-10-21T20:53:35.709Z",
-  "durationMs": 1194,
+  "timestamp": "2026-10-21T21:11:35.218Z",
+  "durationMs": 21473,
   "config": {
     "engineId": "single-agent",
     "architecture": "single",
-    "model": "gpt-4o-mini",
+    "model": "deepseek-chat",
     "maxTokensPerNote": 1024,
     "totalBudgetUsd": 5,
     "seed": 42,
     "vaultPath": "./datasets/synthetic_vault",
     "ablations": {},
-    "repeats": 3
+    "repeats": 1
   },
-  "repeats": 3,
+  "repeats": 1,
   "totalNotes": 12,
-  "failedNotesCount": 36,
+  "failedNotesCount": 0,
   "perNoteMetrics": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -34,11 +61,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -48,11 +102,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.55
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -62,11 +143,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -76,11 +184,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -90,11 +225,36 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 1,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 1,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.4
+      },
       "gold": {
         "expectedFolder": "Daily",
         "expectedTags": [],
@@ -102,11 +262,38 @@
           "Meeting 2025-03-15"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -116,11 +303,38 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -130,11 +344,38 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -144,11 +385,38 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -158,11 +426,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -172,11 +467,38 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Resources",
+        "tags": [],
+        "links": [
+          "Zettelkasten"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.55
+      },
       "gold": {
         "expectedFolder": "Resources",
         "expectedTags": [],
@@ -184,1018 +506,696 @@
           "Concept: Zettelkasten"
         ]
       },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
-        ]
-      },
-      "failed": true
+      "failed": false
     }
   ],
-  "failedNotes": [
+  "failedNotes": [],
+  "results": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.55
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 1,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 1,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.4
+      },
+      "gold": {
+        "expectedFolder": "Daily",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Meeting 2025-03-15"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Projects",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.6
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": true,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": true,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 0,
+      "rawResult": {
+        "folder": "Resources",
+        "tags": [],
+        "links": [
+          "Zettelkasten"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.55
+      },
+      "gold": {
+        "expectedFolder": "Resources",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Concept: Zettelkasten"
+        ]
+      },
+      "failed": false
     }
   ],
-  "results": [],
   "metrics": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 265.3652669992298,
+      "inputTokens": 477,
+      "outputTokens": 207,
+      "costUsd": 0.000196,
+      "wallClockMs": 1782.0956100001931,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.782Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:15.528Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 28.465677000582218,
+      "inputTokens": 477,
+      "outputTokens": 218,
+      "costUsd": 0.000202,
+      "wallClockMs": 1506.3743789996952,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.811Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:17.036Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 31.752724999561906,
+      "inputTokens": 477,
+      "outputTokens": 238,
+      "costUsd": 0.000214,
+      "wallClockMs": 1739.381413999945,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.843Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:18.775Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 26.645592000335455,
+      "inputTokens": 477,
+      "outputTokens": 206,
+      "costUsd": 0.000195,
+      "wallClockMs": 1843.167920999229,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.870Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:20.619Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 29.54599400050938,
+      "inputTokens": 477,
+      "outputTokens": 290,
+      "costUsd": 0.000246,
+      "wallClockMs": 2047.311696998775,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.901Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:22.667Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 27.71082399971783,
+      "inputTokens": 483,
+      "outputTokens": 305,
+      "costUsd": 0.000255,
+      "wallClockMs": 2148.591186000034,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.929Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:24.816Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 25.197626000270247,
+      "inputTokens": 477,
+      "outputTokens": 205,
+      "costUsd": 0.000195,
+      "wallClockMs": 1671.4444239996374,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.954Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:26.488Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 34.46287599951029,
+      "inputTokens": 477,
+      "outputTokens": 217,
+      "costUsd": 0.000202,
+      "wallClockMs": 1729.9814379997551,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:34.989Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:28.218Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 31.92481500096619,
+      "inputTokens": 477,
+      "outputTokens": 225,
+      "costUsd": 0.000207,
+      "wallClockMs": 1721.4395620003343,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.022Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:29.940Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 26.411203000694513,
+      "inputTokens": 477,
+      "outputTokens": 215,
+      "costUsd": 0.000201,
+      "wallClockMs": 1654.3877929989249,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.051Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:31.595Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 26.131554000079632,
+      "inputTokens": 477,
+      "outputTokens": 217,
+      "costUsd": 0.000202,
+      "wallClockMs": 1723.1579910013825,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.078Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:33.319Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
       "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 32.88668099977076,
+      "inputTokens": 481,
+      "outputTokens": 238,
+      "costUsd": 0.000215,
+      "wallClockMs": 1895.5079570002854,
       "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.111Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 24.745049001649022,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.136Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 24.31063200160861,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.161Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 24.159493999555707,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.185Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 31.033071000128984,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.218Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 25.227797999978065,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.243Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 26.257828999310732,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.270Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 26.112277999520302,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.297Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 22.460934000089765,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.320Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 22.901776999235153,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.343Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 21.541532998904586,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.365Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.320830000564456,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.389Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 25.06492600031197,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.414Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 25.749099999666214,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.440Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 28.36594199948013,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.469Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 22.18547699972987,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.492Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.45772000029683,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.516Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 21.17807500064373,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.537Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.7105480004102,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.562Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.823692001402378,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.586Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.59265499934554,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.610Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 21.311613000929356,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.632Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 24.281577998772264,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.657Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 24.29778099991381,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.681Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "engineId": "single-agent",
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "wallClockMs": 23.183101000264287,
-      "quality": "unknown",
-      "timestamp": "2026-10-21T20:53:35.705Z",
-      "runId": "40d301fe-8d11-4d9d-908e-23a6d5a43ebe",
-      "configHash": "e03a68e08e0b96aeb4e1e6614bf7f429673fa18a199b9a855b779c5fff789c8b",
-      "model": "gpt-4o-mini",
+      "timestamp": "2026-10-21T21:11:35.216Z",
+      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
+      "model": "deepseek-chat",
       "seed": 42
     }
   ],
   "summary": {
-    "folderAcc": 0,
-    "tagsP": 0,
-    "tagsR": 0,
-    "linksP": 0,
-    "linksR": 0,
+    "folderAcc": 0.75,
+    "tagsP": 1,
+    "tagsR": 0.16666666666666666,
+    "linksP": 0.9166666666666666,
+    "linksR": 0.8333333333333334,
     "aggregate": {
-      "n": 36,
-      "failed": 36,
+      "n": 12,
+      "failed": 0,
       "folderAcc": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.75,
+        "std": 0.45226701686664544
       },
       "tagsPrecision": {
-        "mean": 0,
+        "mean": 1,
         "std": 0
       },
       "tagsRecall": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.16666666666666666,
+        "std": 0.38924947208076155
       },
       "linksPrecision": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.9166666666666666,
+        "std": 0.28867513459481287
       },
       "linksRecall": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.8333333333333334,
+        "std": 0.38924947208076155
       },
       "costUsd": {
         "mean": 0,

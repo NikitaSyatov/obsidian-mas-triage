@@ -1,16 +1,16 @@
 {
   "mode": "real",
-  "gitCommit": "8256dbd9e867e63aa7757be91220e4e920be49d4",
-  "configHash": "db1667b9968780af08808247663839525687f5e4c8254022a98012d3a1184685",
-  "runId": "0ae2d06e-f5fb-4f92-87d4-b594300da1bf",
-  "model": "gpt-4o-mini",
+  "gitCommit": "0649bc3d82a40bd4fbde8ce893352f6ec5b1d8e6",
+  "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+  "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+  "model": "deepseek-chat",
   "seed": 42,
-  "timestamp": "2026-10-21T20:52:28.357Z",
-  "durationMs": 1577,
+  "timestamp": "2026-10-21T21:12:03.432Z",
+  "durationMs": 16514,
   "config": {
     "engineId": "mas-parallel",
     "architecture": "parallel",
-    "model": "gpt-4o-mini",
+    "model": "deepseek-chat",
     "maxTokensPerNote": 1024,
     "totalBudgetUsd": 5,
     "seed": 42,
@@ -25,15 +25,46 @@
       ]
     },
     "cotMode": "checklist",
-    "repeats": 3
+    "repeats": 1
   },
-  "repeats": 3,
+  "repeats": 1,
   "totalNotes": 12,
-  "failedNotesCount": 36,
+  "failedNotesCount": 0,
   "perNoteMetrics": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1485.7114470005035,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic project reference.",
+        "wallClockMs": 1485.7114470005035
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -43,11 +74,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1302.3709559999406,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке как связанная заметка. | Слово 'проект' общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'проект' are present.",
+        "wallClockMs": 1302.3709559999406
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -57,11 +119,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1517.817642999813,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned in the note.",
+        "wallClockMs": 1517.817642999813
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -71,11 +164,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1285.0064189992845,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явного совпадения с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1285.0064189992845
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -85,11 +209,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1089.1609260011464,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует обработки и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 2, триаж заметки, Project Alpha, проект. | Для темы 'Project Alpha' есть явное совпадение с заголовком 'Project Alpha'. | Остальные темы не имеют явных совпадений с заголовками из списка; 'проект' — слишком общее слово. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
+        "wallClockMs": 1089.1609260011464
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -99,11 +254,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 1347.7655069995672,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "2025-03-15"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [
+            "2025-03-15"
+          ],
+          "concepts": []
+        },
+        "confidence": 0.7000000000000001,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки (triage), со ссылкой на встречу и упоминанием проекта. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована по темам. | Список тегов пуст, поэтому выбрать теги невозможно. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект (неопределённый). | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общий, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Meeting 2025-03-15' as a date reference (2025-03-15). | Identify 'проект' as a generic concept mention, but it is a common noun and not a specific project name. | Discard generic words like 'note', 'triage', 'related', and the generic 'проект' since no specific project is named. | Retain only the explicit date entity.",
+        "wallClockMs": 1347.7655069995672
+      },
       "gold": {
         "expectedFolder": "Daily",
         "expectedTags": [],
@@ -111,11 +297,42 @@
           "Meeting 2025-03-15"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1444.4240050017834,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Beta' as a project reference (linked via [[Project Beta]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1444.4240050017834
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -125,11 +342,42 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1304.6660310011357,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не назначать теги. \n[links] Ключевые сущности: Project Beta, проект. | Project Beta явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1304.6660310011357
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -139,11 +387,42 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1648.7189810015261,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не выбирать теги. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с заголовком 'Project Beta'. | 'проект' — слишком общее слово, не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named project, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1648.7189810015261
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -153,11 +432,42 @@
           "Project Beta"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1185.0598729997873,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1185.0598729997873
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -167,11 +477,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1460.6823440007865,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к конкретному проекту или области. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явной связи с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word for 'project' and discard it as a common term. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
+        "wallClockMs": 1460.6823440007865
+      },
       "gold": {
         "expectedFolder": "Projects",
         "expectedTags": [
@@ -181,11 +522,42 @@
           "Project Alpha"
         ]
       },
-      "failed": true
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 1433.2195429988205,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Zettelkasten"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": [
+            "Zettelkasten"
+          ]
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с концепцией Zettelkasten. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | Слово 'проект' слишком общее и не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. | Другие заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a general term. | No people or dates are mentioned. | Compile the remaining entity into the JSON output.",
+        "wallClockMs": 1433.2195429988205
+      },
       "gold": {
         "expectedFolder": "Resources",
         "expectedTags": [],
@@ -193,521 +565,1018 @@
           "Concept: Zettelkasten"
         ]
       },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": true
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}",
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
-        ]
-      },
-      "failed": true
+      "failed": false
     }
   ],
-  "failedNotes": [
+  "failedNotes": [],
+  "results": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1485.7114470005035,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic project reference.",
+        "wallClockMs": 1485.7114470005035
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1302.3709559999406,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке как связанная заметка. | Слово 'проект' общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'проект' are present.",
+        "wallClockMs": 1302.3709559999406
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1517.817642999813,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned in the note.",
+        "wallClockMs": 1517.817642999813
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1285.0064189992845,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явного совпадения с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1285.0064189992845
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1089.1609260011464,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует обработки и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 2, триаж заметки, Project Alpha, проект. | Для темы 'Project Alpha' есть явное совпадение с заголовком 'Project Alpha'. | Остальные темы не имеют явных совпадений с заголовками из списка; 'проект' — слишком общее слово. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
+        "wallClockMs": 1089.1609260011464
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 1347.7655069995672,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "2025-03-15"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [
+            "2025-03-15"
+          ],
+          "concepts": []
+        },
+        "confidence": 0.7000000000000001,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки (triage), со ссылкой на встречу и упоминанием проекта. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована по темам. | Список тегов пуст, поэтому выбрать теги невозможно. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект (неопределённый). | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общий, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Meeting 2025-03-15' as a date reference (2025-03-15). | Identify 'проект' as a generic concept mention, but it is a common noun and not a specific project name. | Discard generic words like 'note', 'triage', 'related', and the generic 'проект' since no specific project is named. | Retain only the explicit date entity.",
+        "wallClockMs": 1347.7655069995672
+      },
+      "gold": {
+        "expectedFolder": "Daily",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Meeting 2025-03-15"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1444.4240050017834,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Beta' as a project reference (linked via [[Project Beta]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1444.4240050017834
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1304.6660310011357,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.9166666666666666,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не назначать теги. \n[links] Ключевые сущности: Project Beta, проект. | Project Beta явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1304.6660310011357
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1648.7189810015261,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Beta"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Beta"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не выбирать теги. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с заголовком 'Project Beta'. | 'проект' — слишком общее слово, не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named project, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1648.7189810015261
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Beta"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1185.0598729997873,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1185.0598729997873
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 0,
+      "linksPrecision": 1,
+      "linksRecall": 1,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 0,
+        "linksPrecision": 1,
+        "linksRecall": 1
+      },
+      "costUsd": 0,
+      "wallClockMs": 1460.6823440007865,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Project Alpha"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [
+            "Project Alpha"
+          ],
+          "dates": [],
+          "concepts": []
+        },
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к конкретному проекту или области. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явной связи с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word for 'project' and discard it as a common term. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
+        "wallClockMs": 1460.6823440007865
+      },
+      "gold": {
+        "expectedFolder": "Projects",
+        "expectedTags": [
+          "project"
+        ],
+        "expectedLinks": [
+          "Project Alpha"
+        ]
+      },
+      "failed": false
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "error": "LLM request failed: 403 {\"error\":{\"code\":\"unsupported_country_region_territory\",\"message\":\"Country, region, or territory not supported\",\"param\":null,\"type\":\"request_forbidden\"}}"
+      "folderCorrect": false,
+      "tagsPrecision": 1,
+      "tagsRecall": 1,
+      "linksPrecision": 0,
+      "linksRecall": 0,
+      "quality": {
+        "folderCorrect": false,
+        "tagsPrecision": 1,
+        "tagsRecall": 1,
+        "linksPrecision": 0,
+        "linksRecall": 0
+      },
+      "costUsd": 0,
+      "wallClockMs": 1433.2195429988205,
+      "rawResult": {
+        "folder": "00-Inbox",
+        "tags": [],
+        "links": [
+          "Zettelkasten"
+        ],
+        "entities": {
+          "people": [],
+          "projects": [],
+          "dates": [],
+          "concepts": [
+            "Zettelkasten"
+          ]
+        },
+        "confidence": 0.9,
+        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с концепцией Zettelkasten. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | Слово 'проект' слишком общее и не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. | Другие заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a general term. | No people or dates are mentioned. | Compile the remaining entity into the JSON output.",
+        "wallClockMs": 1433.2195429988205
+      },
+      "gold": {
+        "expectedFolder": "Resources",
+        "expectedTags": [],
+        "expectedLinks": [
+          "Concept: Zettelkasten"
+        ]
+      },
+      "failed": false
     }
   ],
-  "results": [],
-  "metrics": [],
+  "metrics": [
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 304,
+      "costUsd": 0.000275,
+      "wallClockMs": 1484.50067400001,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:48.404Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 113,
+          "wallClockMs": 1479.3541889991611
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 69,
+          "wallClockMs": 1299.987669000402
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 122,
+          "wallClockMs": 1245.3833069987595
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 319,
+      "costUsd": 0.000284,
+      "wallClockMs": 1302.180707000196,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:49.709Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 109,
+          "wallClockMs": 1300.739457000047
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 75,
+          "wallClockMs": 1296.137735998258
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 135,
+          "wallClockMs": 1293.1094060000032
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 292,
+      "costUsd": 0.000267,
+      "wallClockMs": 1517.7120420001447,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:51.227Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 105,
+          "wallClockMs": 1515.920745998621
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 79,
+          "wallClockMs": 1511.7534400001168
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 108,
+          "wallClockMs": 1514.630073999986
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 328,
+      "costUsd": 0.000289,
+      "wallClockMs": 1284.8804250005633,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:52.512Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 109,
+          "wallClockMs": 1272.0868480000645
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 96,
+          "wallClockMs": 1269.5703159999102
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 123,
+          "wallClockMs": 1281.964677998796
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 338,
+      "costUsd": 0.000295,
+      "wallClockMs": 1089.0704110004008,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:53.602Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 103,
+          "wallClockMs": 1088.2825980000198
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 118,
+          "wallClockMs": 1084.9313209988177
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 117,
+          "wallClockMs": 1083.5126990005374
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 633,
+      "outputTokens": 394,
+      "costUsd": 0.000331,
+      "wallClockMs": 1347.6076650004834,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:54.950Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 251,
+          "outputTokens": 125,
+          "wallClockMs": 1329.1937990002334
+        },
+        {
+          "name": "links",
+          "inputTokens": 232,
+          "outputTokens": 110,
+          "wallClockMs": 1321.9705049991608
+        },
+        {
+          "name": "entities",
+          "inputTokens": 150,
+          "outputTokens": 159,
+          "wallClockMs": 1343.2204979993403
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 346,
+      "costUsd": 0.0003,
+      "wallClockMs": 1444.309465000406,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:56.394Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 114,
+          "wallClockMs": 1302.1450160015374
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 90,
+          "wallClockMs": 1094.758887000382
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 142,
+          "wallClockMs": 1441.542621999979
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 314,
+      "costUsd": 0.000281,
+      "wallClockMs": 1304.5028809998184,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:57.700Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 110,
+          "wallClockMs": 984.5419350005686
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 84,
+          "wallClockMs": 984.6606649998575
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 120,
+          "wallClockMs": 1302.2137540001422
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 321,
+      "costUsd": 0.000285,
+      "wallClockMs": 1648.024757001549,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:11:59.348Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 112,
+          "wallClockMs": 1032.6426649987698
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 89,
+          "wallClockMs": 1030.294592000544
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 120,
+          "wallClockMs": 1645.1224199999124
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 304,
+      "costUsd": 0.000275,
+      "wallClockMs": 1184.9140439983457,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:12:00.534Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 94,
+          "wallClockMs": 1183.7680830005556
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 79,
+          "wallClockMs": 1183.9298370014876
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 131,
+          "wallClockMs": 1182.7925370000303
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 615,
+      "outputTokens": 321,
+      "costUsd": 0.000285,
+      "wallClockMs": 1460.5865219999105,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:12:01.995Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 245,
+          "outputTokens": 111,
+          "wallClockMs": 1063.8886860013008
+        },
+        {
+          "name": "links",
+          "inputTokens": 226,
+          "outputTokens": 94,
+          "wallClockMs": 1459.7344540003687
+        },
+        {
+          "name": "entities",
+          "inputTokens": 144,
+          "outputTokens": 116,
+          "wallClockMs": 1062.1133129987866
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    },
+    {
+      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
+      "engineId": "mas-parallel",
+      "inputTokens": 627,
+      "outputTokens": 372,
+      "costUsd": 0.000317,
+      "wallClockMs": 1433.1298660002649,
+      "quality": "unknown",
+      "timestamp": "2026-10-21T21:12:03.429Z",
+      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
+      "model": "deepseek-chat",
+      "seed": 42,
+      "agentBreakdown": [
+        {
+          "name": "classification",
+          "inputTokens": 249,
+          "outputTokens": 118,
+          "wallClockMs": 1432.6270059999079
+        },
+        {
+          "name": "links",
+          "inputTokens": 230,
+          "outputTokens": 120,
+          "wallClockMs": 1432.0696709994227
+        },
+        {
+          "name": "entities",
+          "inputTokens": 148,
+          "outputTokens": 134,
+          "wallClockMs": 1430.3166480008513
+        }
+      ],
+      "useMessaging": false,
+      "useSharedMemory": true
+    }
+  ],
   "summary": {
     "folderAcc": 0,
-    "tagsP": 0,
-    "tagsR": 0,
-    "linksP": 0,
-    "linksR": 0,
+    "tagsP": 1,
+    "tagsR": 0.16666666666666666,
+    "linksP": 0.8333333333333334,
+    "linksR": 0.8333333333333334,
     "aggregate": {
-      "n": 0,
+      "n": 12,
       "failed": 0,
       "folderAcc": {
         "mean": 0,
         "std": 0
       },
       "tagsPrecision": {
-        "mean": 0,
+        "mean": 1,
         "std": 0
       },
       "tagsRecall": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.16666666666666666,
+        "std": 0.38924947208076155
       },
       "linksPrecision": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.8333333333333334,
+        "std": 0.38924947208076155
       },
       "linksRecall": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.8333333333333334,
+        "std": 0.38924947208076155
       },
       "costUsd": {
         "mean": 0,
         "std": 0
       },
       "wallClockMs": {
-        "mean": 0,
-        "std": 0
+        "mean": 1375.3836395836745,
+        "std": 153.73191699001254
       }
     }
   }
