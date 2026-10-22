@@ -1,12 +1,12 @@
 {
   "mode": "real",
-  "gitCommit": "e40a35cf81e1e91f120bc47719337799e36b9ca0",
+  "gitCommit": "5498b7f7d7dd8a425e24ab3422d8af8b8a0a2495",
   "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-  "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
+  "runId": "a51f6794-5757-4a2d-b2d0-3a4abd5b1f58",
   "model": "deepseek-chat",
   "seed": 42,
-  "timestamp": "2026-10-22T08:37:55.414Z",
-  "durationMs": 24322,
+  "timestamp": "2026-10-22T11:26:05.372Z",
+  "durationMs": 5641,
   "config": {
     "engineId": "single-agent",
     "architecture": "single",
@@ -20,6 +20,7 @@
   },
   "repeats": 1,
   "totalNotes": 12,
+  "limit": 3,
   "failedNotesCount": 0,
   "perNoteMetrics": [
     {
@@ -141,371 +142,6 @@
         ],
         "expectedLinks": [
           "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "folderCorrect": false,
-      "tagsPrecision": 1,
-      "tagsRecall": 1,
-      "linksPrecision": 0,
-      "linksRecall": 0,
-      "quality": {
-        "folderCorrect": false,
-        "tagsPrecision": 1,
-        "tagsRecall": 1,
-        "linksPrecision": 0,
-        "linksRecall": 0
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "2025-03-15"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.45
-      },
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.7
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 1,
-      "linksPrecision": 0,
-      "linksRecall": 0,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 1,
-        "linksPrecision": 0,
-        "linksRecall": 0
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Resources",
-        "tags": [],
-        "links": [
-          "Zettelkasten"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.45
-      },
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
         ]
       },
       "failed": false
@@ -635,371 +271,6 @@
         ]
       },
       "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "folderCorrect": false,
-      "tagsPrecision": 1,
-      "tagsRecall": 1,
-      "linksPrecision": 0,
-      "linksRecall": 0,
-      "quality": {
-        "folderCorrect": false,
-        "tagsPrecision": 1,
-        "tagsRecall": 1,
-        "linksPrecision": 0,
-        "linksRecall": 0
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "2025-03-15"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.45
-      },
-      "gold": {
-        "expectedFolder": "Daily",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Meeting 2025-03-15"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Beta"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Beta"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.7
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 0,
-      "linksPrecision": 1,
-      "linksRecall": 1,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 0,
-        "linksPrecision": 1,
-        "linksRecall": 1
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Projects",
-        "tags": [],
-        "links": [
-          "Project Alpha"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.9
-      },
-      "gold": {
-        "expectedFolder": "Projects",
-        "expectedTags": [
-          "project"
-        ],
-        "expectedLinks": [
-          "Project Alpha"
-        ]
-      },
-      "failed": false
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "folderCorrect": true,
-      "tagsPrecision": 1,
-      "tagsRecall": 1,
-      "linksPrecision": 0,
-      "linksRecall": 0,
-      "quality": {
-        "folderCorrect": true,
-        "tagsPrecision": 1,
-        "tagsRecall": 1,
-        "linksPrecision": 0,
-        "linksRecall": 0
-      },
-      "costUsd": 0,
-      "wallClockMs": 0,
-      "rawResult": {
-        "folder": "Resources",
-        "tags": [],
-        "links": [
-          "Zettelkasten"
-        ],
-        "entities": {
-          "people": [],
-          "projects": [],
-          "dates": [],
-          "concepts": []
-        },
-        "confidence": 0.45
-      },
-      "gold": {
-        "expectedFolder": "Resources",
-        "expectedTags": [],
-        "expectedLinks": [
-          "Concept: Zettelkasten"
-        ]
-      },
-      "failed": false
     }
   ],
   "metrics": [
@@ -1007,12 +278,12 @@
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
       "engineId": "single-agent",
       "inputTokens": 473,
-      "outputTokens": 217,
-      "costUsd": 0.000201,
-      "wallClockMs": 2534.045760000008,
+      "outputTokens": 200,
+      "costUsd": 0.000348,
+      "wallClockMs": 1819.1684119999409,
       "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:33.628Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
+      "timestamp": "2026-10-22T11:26:01.554Z",
+      "runId": "a51f6794-5757-4a2d-b2d0-3a4abd5b1f58",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1021,12 +292,12 @@
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
       "engineId": "single-agent",
       "inputTokens": 473,
-      "outputTokens": 224,
-      "costUsd": 0.000205,
-      "wallClockMs": 1914.8733719999436,
+      "outputTokens": 187,
+      "costUsd": 0.000333,
+      "wallClockMs": 1751.1435480001383,
       "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:35.545Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
+      "timestamp": "2026-10-22T11:26:03.316Z",
+      "runId": "a51f6794-5757-4a2d-b2d0-3a4abd5b1f58",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1035,171 +306,45 @@
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
       "engineId": "single-agent",
       "inputTokens": 473,
-      "outputTokens": 208,
-      "costUsd": 0.000196,
-      "wallClockMs": 1738.8269139999757,
+      "outputTokens": 220,
+      "costUsd": 0.00037,
+      "wallClockMs": 2043.156047000084,
       "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:37.289Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 200,
-      "costUsd": 0.000191,
-      "wallClockMs": 1848.9980330000399,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:39.139Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 202,
-      "costUsd": 0.000192,
-      "wallClockMs": 2448.572802999988,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:41.588Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
-      "engineId": "single-agent",
-      "inputTokens": 479,
-      "outputTokens": 269,
-      "costUsd": 0.000233,
-      "wallClockMs": 2149.7054380000336,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:43.738Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 215,
-      "costUsd": 0.0002,
-      "wallClockMs": 1893.9611650001025,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:45.633Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 219,
-      "costUsd": 0.000202,
-      "wallClockMs": 1891.09817500005,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:47.525Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 194,
-      "costUsd": 0.000187,
-      "wallClockMs": 1848.427619000082,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:49.374Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 213,
-      "costUsd": 0.000199,
-      "wallClockMs": 2040.7737709999783,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:51.416Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "engineId": "single-agent",
-      "inputTokens": 473,
-      "outputTokens": 202,
-      "costUsd": 0.000192,
-      "wallClockMs": 1841.1051890000235,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:53.259Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
-      "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-      "model": "deepseek-chat",
-      "seed": 42
-    },
-    {
-      "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 252,
-      "costUsd": 0.000223,
-      "wallClockMs": 2148.4855509999907,
-      "quality": "unknown",
-      "timestamp": "2026-10-22T08:37:55.409Z",
-      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
+      "timestamp": "2026-10-22T11:26:05.363Z",
+      "runId": "a51f6794-5757-4a2d-b2d0-3a4abd5b1f58",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
     }
   ],
   "summary": {
-    "folderAcc": 0.9166666666666666,
+    "folderAcc": 1,
     "tagsP": 1,
-    "tagsR": 0.16666666666666666,
-    "linksP": 0.8333333333333334,
-    "linksR": 0.8333333333333334,
+    "tagsR": 0,
+    "linksP": 1,
+    "linksR": 1,
     "aggregate": {
-      "n": 12,
+      "n": 3,
       "failed": 0,
       "folderAcc": {
-        "mean": 0.9166666666666666,
-        "std": 0.28867513459481287
+        "mean": 1,
+        "std": 0
       },
       "tagsPrecision": {
         "mean": 1,
         "std": 0
       },
       "tagsRecall": {
-        "mean": 0.16666666666666666,
-        "std": 0.38924947208076155
+        "mean": 0,
+        "std": 0
       },
       "linksPrecision": {
-        "mean": 0.8333333333333334,
-        "std": 0.38924947208076155
+        "mean": 1,
+        "std": 0
       },
       "linksRecall": {
-        "mean": 0.8333333333333334,
-        "std": 0.38924947208076155
+        "mean": 1,
+        "std": 0
       },
       "costUsd": {
         "mean": 0,

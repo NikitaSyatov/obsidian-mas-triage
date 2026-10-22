@@ -1,0 +1,18 @@
+{
+  "id": "question_alpha",
+  "text": "Какие решения я принял по проекту Alpha и есть ли противоречия в моих заметках?",
+  "gold": {
+    "expectedFacts": [
+      { "id": "F1", "description": "Kickoff 2025-02-10, PostgreSQL chosen", "keyword": "PostgreSQL", "sourceNote": "Meetings/2025-02-10-Alpha-kickoff.md", "expected": true },
+      { "id": "F2", "description": "Confirmed PostgreSQL 2025-03-20", "keyword": "PostgreSQL", "sourceNote": "Daily/2025-03-20.md", "expected": true },
+      { "id": "F3", "description": "Pivoted to SQLite for MVP 2025-05-01", "keyword": "SQLite", "sourceNote": "Daily/2025-05-01.md", "expected": true },
+      { "id": "F4", "description": "Originally chose React (2025-01-15, alias A-Project)", "keyword": "React", "sourceNote": "Daily/2025-01-15.md", "expected": true },
+      { "id": "F5", "description": "Switched to Svelte 2025-06-01", "keyword": "Svelte", "sourceNote": "Meetings/2025-06-01-Alpha-final.md", "expected": true }
+    ],
+    "expectedContradictions": [
+      { "id": "C1", "description": "PostgreSQL vs SQLite (F2 vs F3, superseded by date)", "noteA": "Daily/2025-03-20.md", "noteB": "Daily/2025-05-01.md" },
+      { "id": "C2", "description": "React vs Svelte (F4 vs F5, superseded by date)", "noteA": "Daily/2025-01-15.md", "noteB": "Meetings/2025-06-01-Alpha-final.md" }
+    ],
+    "expectedGaps": ["Хост/деплой (в волте нет)"]
+  }
+}

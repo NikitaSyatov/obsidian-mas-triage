@@ -62,6 +62,26 @@ describe("FsVaultAdapter", () => {
     expect(ctx.folders).toContain("Projects");
     expect(ctx.folders).not.toContain("00-Inbox");
   });
+
+  it("readNote accepts vault-relative paths", async () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    fs.mkdirSync(path.join(tmp, "Projects"));
+    fs.writeFileSync(path.join(tmp, "Projects", "Alpha.md"), "# Alpha");
+    const adapter = new FsVaultAdapter(tmp, "00-Inbox");
+    const note = await adapter.readNote({ path: "Projects/Alpha.md" });
+    expect(note.content).toContain("Alpha");
+    expect(note.path).toBe("Projects/Alpha.md");
+  });
+
+  it("readNote still accepts cwd-relative paths", async () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    fs.mkdirSync(path.join(tmp, "00-Inbox"));
+    const file = path.join(tmp, "00-Inbox", "inbox_1.md");
+    fs.writeFileSync(file, "# Inbox");
+    const adapter = new FsVaultAdapter(tmp, "00-Inbox");
+    const note = await adapter.readNote({ path: file });
+    expect(note.content).toContain("Inbox");
+  });
 });
 
 describe.skip("ObsidianVaultAdapter: тестируется smoke-тестом в Obsidian", () => {});

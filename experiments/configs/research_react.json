@@ -1,0 +1,13 @@
+{
+  "task": "research",
+  "engineId": "react",
+  "model": "gpt-4o-mini",
+  "maxLlmCalls": 6,
+  "maxUsd": 0.05,
+  "maxSteps": 6,
+  "maxTokensPerCall": 1500,
+  "vaultPath": "./datasets/research/vault",
+  "questionPath": "./datasets/research/gold/question_alpha.json",
+  "seed": 42,
+  "repeats": 3
+}

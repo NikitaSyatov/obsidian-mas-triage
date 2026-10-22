@@ -18,12 +18,44 @@ export class FsVaultAdapter implements Vault {
   }
 
   async readNote(ref: NoteRef): Promise<Note> {
-    const content = fs.readFileSync(ref.path, "utf-8");
+    // The ref may be a path relative to the cwd (triage flow) or a
+    // vault-relative path (research flow) — accept both.
+    let filePath = ref.path;
+    if (!fs.existsSync(filePath)) {
+      const candidate = path.join(this.rootPath, ref.path);
+      if (fs.existsSync(candidate)) filePath = candidate;
+    }
+    const content = fs.readFileSync(filePath, "utf-8");
     return {
       path: ref.path,
       content,
       frontmatter: {},
     };
+  }
+
+  /**
+   * All notes in the vault (excluding the inbox and hidden dirs), with
+   * vault-relative paths. Used by the research task to build a search index.
+   */
+  listAllNotes(): NoteRef[] {
+    const refs: NoteRef[] = [];
+    const walk = (dir: string) => {
+      if (!fs.existsSync(dir)) return;
+      for (const e of fs.readdirSync(dir).sort()) {
+        const full = path.join(dir, e);
+        const stat = fs.statSync(full);
+        if (stat.isDirectory()) {
+          if (e === ".obsidian" || e.startsWith(".")) continue;
+          walk(full);
+        } else if (e.endsWith(".md")) {
+          const rel = path.relative(this.rootPath, full).replace(/\\/g, "/");
+          if (rel === this.inboxPath || rel.startsWith(this.inboxPath + "/")) continue;
+          refs.push({ path: rel });
+        }
+      }
+    };
+    walk(this.rootPath);
+    return refs;
   }
 
   async applyTriage(ref: NoteRef, result: TriageResult): Promise<void> {

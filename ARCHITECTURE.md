@@ -58,3 +58,26 @@ Ablations via flags: `useSharedMemory`, `useMessaging`, `enabledAgents`. See `ex
 ### Plan experiment (summary)
 See detailed plan in [`experiments/README.md`](experiments/README.md).  
 Key points: comparable token budget per note/task, `repeats>=3`, metrics quality/cost/time, ablations, criteria for MAS success/failure.
+
+## Deep Research over Vault (отдельное измерение, не трогает Inbox Triage)
+
+```
+src/research/
+├── types.ts          ResearchEngine / ResearchAnswer / ResearchTrace / GoldFact / ResearchDeps
+├── tools/            search.ts (BM25 по содержимому) · read.ts · answer.ts (валидация цитат)
+├── engines/          BaselineEngine (E0, 1 вызов) · ReActEngine (E2, цикл Thought/Action/Observation) · index.ts (factory)
+├── evaluate.ts       coverage / groundedness / contradictionsFound / gapsMatched
+└── mock/             ResearchMockLlm — фикстурный LLM для pipeline-smoke
+```
+
+- `ResearchEngine.solve(question, deps): Promise<ResearchAnswer>` — единый контракт для всех движков.
+- `ResearchDeps` = { vault, llm, metrics, searchIndex, budget {maxUsd, maxLlmCalls}, config {model, maxTokensPerCall, maxSteps?} }.
+- `SearchIndex` (BM25 без зависимостей) строится **runner-ом один раз** и передаётся обоим движкам —
+  контракт извлечения у движков одинаковый, различается только способ вызова LLM.
+- Поиск идёт **только по содержимому** заметок (заголовки не индексируются) — на этом свойстве
+  построена ловушка с алиасом (`datasets/research/vault`).
+- ReAct резервирует последний вызов под синтез ответа: при исчерпании шагов/бюджета движок
+  всё равно возвращает нормальный ответ, помечая в trace `forced_finish: true`.
+- Бюджет у baseline и react одинаковый по деньгам (`maxUsd`), различается по числу вызовов.
+- CLI: `experiments/runner.ts --task research --engine baseline|react --question <id>`.
+- TODO (по одной технике за шаг): CoT, ToT, Self-Reflection, LLM Compiler — см. `src/research/engines/index.ts`.

@@ -1,0 +1,12 @@
+{
+  "task": "research",
+  "engineId": "baseline",
+  "model": "gpt-4o-mini",
+  "maxLlmCalls": 1,
+  "maxUsd": 0.05,
+  "maxTokensPerCall": 1500,
+  "vaultPath": "./datasets/research/vault",
+  "questionPath": "./datasets/research/gold/question_alpha.json",
+  "seed": 42,
+  "repeats": 3
+}

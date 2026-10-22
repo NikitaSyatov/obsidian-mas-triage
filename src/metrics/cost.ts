@@ -8,6 +8,7 @@ const PRICING_TABLE: Record<string, Pricing> = {
   "gpt-4o-mini": { inputPer1M: 0.15, outputPer1M: 0.6 },
   "gpt-4o": { inputPer1M: 2.5, outputPer1M: 10.0 },
   "gpt-4.1-mini": { inputPer1M: 0.4, outputPer1M: 1.6 },
+  "deepseek-chat": { inputPer1M: 0.27, outputPer1M: 1.1 },
 };
 
 export function getPricingFor(model: string): Pricing {

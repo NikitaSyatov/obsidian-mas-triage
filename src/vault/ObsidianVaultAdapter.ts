@@ -36,6 +36,20 @@ export class ObsidianVaultAdapter implements Vault {
     };
   }
 
+  /**
+   * All notes in the vault (excluding the inbox), with vault-relative paths.
+   * Used by the research task to build a search index.
+   */
+  listAllNotes(): NoteRef[] {
+    const refs: NoteRef[] = [];
+    this.app.vault.getAllLoadedFiles().forEach((f) => {
+      if (!(f instanceof TFile) || f.extension !== "md") return;
+      if (f.path === this.inboxPath || f.path.startsWith(this.inboxPath + "/")) return;
+      refs.push({ path: f.path });
+    });
+    return refs;
+  }
+
   async getVaultContext(): Promise<VaultContext> {
     const folders: string[] = [];
     this.app.vault.getAllLoadedFiles().forEach((f) => {
