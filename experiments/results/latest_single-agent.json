@@ -1,12 +1,12 @@
 {
   "mode": "real",
-  "gitCommit": "0649bc3d82a40bd4fbde8ce893352f6ec5b1d8e6",
+  "gitCommit": "e40a35cf81e1e91f120bc47719337799e36b9ca0",
   "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
-  "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+  "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
   "model": "deepseek-chat",
   "seed": 42,
-  "timestamp": "2026-10-21T21:11:35.218Z",
-  "durationMs": 21473,
+  "timestamp": "2026-10-22T08:37:55.414Z",
+  "durationMs": 24322,
   "config": {
     "engineId": "single-agent",
     "architecture": "single",
@@ -50,7 +50,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -91,7 +91,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -106,13 +106,13 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
@@ -121,7 +121,7 @@
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -132,7 +132,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.55
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -188,13 +188,13 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
@@ -203,7 +203,7 @@
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -214,7 +214,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -232,28 +232,30 @@
       "folderCorrect": false,
       "tagsPrecision": 1,
       "tagsRecall": 1,
-      "linksPrecision": 1,
+      "linksPrecision": 0,
       "linksRecall": 0,
       "quality": {
         "folderCorrect": false,
         "tagsPrecision": 1,
         "tagsRecall": 1,
-        "linksPrecision": 1,
+        "linksPrecision": 0,
         "linksRecall": 0
       },
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
-        "links": [],
+        "links": [
+          "2025-03-15"
+        ],
         "entities": {
           "people": [],
           "projects": [],
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.4
+        "confidence": 0.45
       },
       "gold": {
         "expectedFolder": "Daily",
@@ -333,7 +335,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.8
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -415,7 +417,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9
+        "confidence": 0.7
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -456,7 +458,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -497,7 +499,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.55
+        "confidence": 0.45
       },
       "gold": {
         "expectedFolder": "Resources",
@@ -539,7 +541,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -580,7 +582,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -595,13 +597,13 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
@@ -610,7 +612,7 @@
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -621,7 +623,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.55
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -677,13 +679,13 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
@@ -692,7 +694,7 @@
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -703,7 +705,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -721,28 +723,30 @@
       "folderCorrect": false,
       "tagsPrecision": 1,
       "tagsRecall": 1,
-      "linksPrecision": 1,
+      "linksPrecision": 0,
       "linksRecall": 0,
       "quality": {
         "folderCorrect": false,
         "tagsPrecision": 1,
         "tagsRecall": 1,
-        "linksPrecision": 1,
+        "linksPrecision": 0,
         "linksRecall": 0
       },
       "costUsd": 0,
       "wallClockMs": 0,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
-        "links": [],
+        "links": [
+          "2025-03-15"
+        ],
         "entities": {
           "people": [],
           "projects": [],
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.4
+        "confidence": 0.45
       },
       "gold": {
         "expectedFolder": "Daily",
@@ -822,7 +826,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.8
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -904,7 +908,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9
+        "confidence": 0.7
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -945,7 +949,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.6
+        "confidence": 0.9
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -986,7 +990,7 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.55
+        "confidence": 0.45
       },
       "gold": {
         "expectedFolder": "Resources",
@@ -1002,13 +1006,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 207,
-      "costUsd": 0.000196,
-      "wallClockMs": 1782.0956100001931,
+      "inputTokens": 473,
+      "outputTokens": 217,
+      "costUsd": 0.000201,
+      "wallClockMs": 2534.045760000008,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:15.528Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:33.628Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1016,13 +1020,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 218,
-      "costUsd": 0.000202,
-      "wallClockMs": 1506.3743789996952,
+      "inputTokens": 473,
+      "outputTokens": 224,
+      "costUsd": 0.000205,
+      "wallClockMs": 1914.8733719999436,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:17.036Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:35.545Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1030,13 +1034,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 238,
-      "costUsd": 0.000214,
-      "wallClockMs": 1739.381413999945,
+      "inputTokens": 473,
+      "outputTokens": 208,
+      "costUsd": 0.000196,
+      "wallClockMs": 1738.8269139999757,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:18.775Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:37.289Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1044,13 +1048,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 206,
-      "costUsd": 0.000195,
-      "wallClockMs": 1843.167920999229,
+      "inputTokens": 473,
+      "outputTokens": 200,
+      "costUsd": 0.000191,
+      "wallClockMs": 1848.9980330000399,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:20.619Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:39.139Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1058,13 +1062,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 290,
-      "costUsd": 0.000246,
-      "wallClockMs": 2047.311696998775,
+      "inputTokens": 473,
+      "outputTokens": 202,
+      "costUsd": 0.000192,
+      "wallClockMs": 2448.572802999988,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:22.667Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:41.588Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1072,13 +1076,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
       "engineId": "single-agent",
-      "inputTokens": 483,
-      "outputTokens": 305,
-      "costUsd": 0.000255,
-      "wallClockMs": 2148.591186000034,
+      "inputTokens": 479,
+      "outputTokens": 269,
+      "costUsd": 0.000233,
+      "wallClockMs": 2149.7054380000336,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:24.816Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:43.738Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1086,13 +1090,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 205,
-      "costUsd": 0.000195,
-      "wallClockMs": 1671.4444239996374,
+      "inputTokens": 473,
+      "outputTokens": 215,
+      "costUsd": 0.0002,
+      "wallClockMs": 1893.9611650001025,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:26.488Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:45.633Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1100,13 +1104,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 217,
+      "inputTokens": 473,
+      "outputTokens": 219,
       "costUsd": 0.000202,
-      "wallClockMs": 1729.9814379997551,
+      "wallClockMs": 1891.09817500005,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:28.218Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:47.525Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1114,13 +1118,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 225,
-      "costUsd": 0.000207,
-      "wallClockMs": 1721.4395620003343,
+      "inputTokens": 473,
+      "outputTokens": 194,
+      "costUsd": 0.000187,
+      "wallClockMs": 1848.427619000082,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:29.940Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:49.374Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1128,13 +1132,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 215,
-      "costUsd": 0.000201,
-      "wallClockMs": 1654.3877929989249,
+      "inputTokens": 473,
+      "outputTokens": 213,
+      "costUsd": 0.000199,
+      "wallClockMs": 2040.7737709999783,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:31.595Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:51.416Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1142,13 +1146,13 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
       "engineId": "single-agent",
-      "inputTokens": 477,
-      "outputTokens": 217,
-      "costUsd": 0.000202,
-      "wallClockMs": 1723.1579910013825,
+      "inputTokens": 473,
+      "outputTokens": 202,
+      "costUsd": 0.000192,
+      "wallClockMs": 1841.1051890000235,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:33.319Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:53.259Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
@@ -1156,30 +1160,30 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
       "engineId": "single-agent",
-      "inputTokens": 481,
-      "outputTokens": 238,
-      "costUsd": 0.000215,
-      "wallClockMs": 1895.5079570002854,
+      "inputTokens": 477,
+      "outputTokens": 252,
+      "costUsd": 0.000223,
+      "wallClockMs": 2148.4855509999907,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:35.216Z",
-      "runId": "0b381a80-56fd-4a18-82e6-8f893906f59f",
+      "timestamp": "2026-10-22T08:37:55.409Z",
+      "runId": "abc21f07-0ee3-46b5-bec7-adeddc1f1b2b",
       "configHash": "b1fe06e78dfe52f7c7ba24e0f41f1c8d7fce9fdae74adb39ef97c49fe7231fd7",
       "model": "deepseek-chat",
       "seed": 42
     }
   ],
   "summary": {
-    "folderAcc": 0.75,
+    "folderAcc": 0.9166666666666666,
     "tagsP": 1,
     "tagsR": 0.16666666666666666,
-    "linksP": 0.9166666666666666,
+    "linksP": 0.8333333333333334,
     "linksR": 0.8333333333333334,
     "aggregate": {
       "n": 12,
       "failed": 0,
       "folderAcc": {
-        "mean": 0.75,
-        "std": 0.45226701686664544
+        "mean": 0.9166666666666666,
+        "std": 0.28867513459481287
       },
       "tagsPrecision": {
         "mean": 1,
@@ -1190,8 +1194,8 @@
         "std": 0.38924947208076155
       },
       "linksPrecision": {
-        "mean": 0.9166666666666666,
-        "std": 0.28867513459481287
+        "mean": 0.8333333333333334,
+        "std": 0.38924947208076155
       },
       "linksRecall": {
         "mean": 0.8333333333333334,

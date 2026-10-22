@@ -44,6 +44,8 @@ export class ObsidianVaultAdapter implements Vault {
         if (!path) return;
         if (path.startsWith(".obsidian")) return;
         if (path.split("/").some((p) => p.startsWith("."))) return;
+        // Inbox is the source folder, not a valid triage target
+        if (path === this.inboxPath || path.startsWith(this.inboxPath + "/")) return;
         folders.push(path);
       }
     });

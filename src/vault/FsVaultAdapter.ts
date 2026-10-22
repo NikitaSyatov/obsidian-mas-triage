@@ -50,7 +50,13 @@ export class FsVaultAdapter implements Vault {
         const stat = fs.statSync(full);
         if (stat.isDirectory()) {
           if (e === ".obsidian" || e.startsWith(".")) continue;
-          folders.push(path.relative(this.rootPath, full).replace(/\\/g, "/"));
+          const rel = path.relative(this.rootPath, full).replace(/\\/g, "/");
+          // Inbox is the source folder, not a valid triage target
+          if (rel === this.inboxPath || rel.startsWith(this.inboxPath + "/")) {
+            walk(full);
+            continue;
+          }
+          folders.push(rel);
           walk(full);
         }
       }

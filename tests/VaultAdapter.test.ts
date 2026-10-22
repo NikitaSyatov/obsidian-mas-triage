@@ -52,6 +52,16 @@ describe("FsVaultAdapter", () => {
     expect(ctx.folders.length).toBeGreaterThan(0);
     expect(ctx.noteTitles).toContain("MyNote");
   });
+
+  it("getVaultContext excludes Inbox from target folders", async () => {
+    const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "vault-"));
+    fs.mkdirSync(path.join(tmp, "00-Inbox"));
+    fs.mkdirSync(path.join(tmp, "Projects"));
+    const adapter = new FsVaultAdapter(tmp, "00-Inbox");
+    const ctx = await adapter.getVaultContext();
+    expect(ctx.folders).toContain("Projects");
+    expect(ctx.folders).not.toContain("00-Inbox");
+  });
 });
 
 describe.skip("ObsidianVaultAdapter: тестируется smoke-тестом в Obsidian", () => {});

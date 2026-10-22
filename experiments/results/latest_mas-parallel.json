@@ -1,12 +1,12 @@
 {
   "mode": "real",
-  "gitCommit": "0649bc3d82a40bd4fbde8ce893352f6ec5b1d8e6",
+  "gitCommit": "e40a35cf81e1e91f120bc47719337799e36b9ca0",
   "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
-  "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+  "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
   "model": "deepseek-chat",
   "seed": 42,
-  "timestamp": "2026-10-21T21:12:03.432Z",
-  "durationMs": 16514,
+  "timestamp": "2026-10-22T08:37:19.809Z",
+  "durationMs": 19070,
   "config": {
     "engineId": "mas-parallel",
     "architecture": "parallel",
@@ -33,22 +33,22 @@
   "perNoteMetrics": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1485.7114470005035,
+      "wallClockMs": 2145.3861959999194,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -61,9 +61,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic project reference.",
-        "wallClockMs": 1485.7114470005035
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common word. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 2145.3861959999194
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -78,22 +78,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1302.3709559999406,
+      "wallClockMs": 1735.5490759999957,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -106,9 +106,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке как связанная заметка. | Слово 'проект' общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'проект' are present.",
-        "wallClockMs": 1302.3709559999406
+        "confidence": 0.85,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Выбираю папку Projects, так как заметка явно относится к проектной работе (Project Alpha). | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1735.5490759999957
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -123,22 +123,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1517.817642999813,
+      "wallClockMs": 1538.4473860000726,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -151,9 +151,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned in the note.",
-        "wallClockMs": 1517.817642999813
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1538.4473860000726
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -168,22 +168,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1285.0064189992845,
+      "wallClockMs": 1532.136737999972,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -196,9 +196,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явного совпадения с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
-        "wallClockMs": 1285.0064189992845
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с проектом Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1532.136737999972
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -213,22 +213,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1089.1609260011464,
+      "wallClockMs": 1263.8108370000264,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -241,9 +241,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует обработки и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 2, триаж заметки, Project Alpha, проект. | Для темы 'Project Alpha' есть явное совпадение с заголовком 'Project Alpha'. | Остальные темы не имеют явных совпадений с заголовками из списка; 'проект' — слишком общее слово. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
-        "wallClockMs": 1089.1609260011464
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно упомянут в заметке и совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (inside wiki-link). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1263.8108370000264
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -271,9 +271,9 @@
         "linksRecall": 0
       },
       "costUsd": 0,
-      "wallClockMs": 1347.7655069995672,
+      "wallClockMs": 1411.3410729999887,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "2025-03-15"
@@ -284,11 +284,13 @@
           "dates": [
             "2025-03-15"
           ],
-          "concepts": []
+          "concepts": [
+            "проект"
+          ]
         },
-        "confidence": 0.7000000000000001,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки (triage), со ссылкой на встречу и упоминанием проекта. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована по темам. | Список тегов пуст, поэтому выбрать теги невозможно. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект (неопределённый). | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общий, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Meeting 2025-03-15' as a date reference (2025-03-15). | Identify 'проект' as a generic concept mention, but it is a common noun and not a specific project name. | Discard generic words like 'note', 'triage', 'related', and the generic 'проект' since no specific project is named. | Retain only the explicit date entity.",
-        "wallClockMs": 1347.7655069995672
+        "confidence": 0.6333333333333333,
+        "reasoning": "[classification] Заметка представляет собой краткую входящую запись для триажа, связанную со встречей и упоминающую проект. | Папка Projects выбрана, так как заметка связана с проектной деятельностью и встречей по проекту. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект. | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общее, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Meeting 2025-03-15' as a date reference. | Identify 'проект' as a generic concept mention. | Discard generic words like 'note', 'triage', 'related', 'mentions'.",
+        "wallClockMs": 1411.3410729999887
       },
       "gold": {
         "expectedFolder": "Daily",
@@ -301,22 +303,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1444.4240050017834,
+      "wallClockMs": 1390.2701939999824,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -329,9 +331,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Beta' as a project reference (linked via [[Project Beta]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
-        "wallClockMs": 1444.4240050017834
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Beta. | Папка Projects подходит, так как заметка явно относится к проекту Project Beta. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 4, триаж заметки, Project Beta, проект. | Для темы 'Project Beta' есть точное совпадение с заголовком 'Project Beta'. | Тема 'проект' слишком общая и не даёт явного совпадения с другими заголовками. | Остальные заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference (linked). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1390.2701939999824
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -346,22 +348,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1304.6660310011357,
+      "wallClockMs": 2168.303268000018,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -374,9 +376,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не назначать теги. \n[links] Ключевые сущности: Project Beta, проект. | Project Beta явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
-        "wallClockMs": 1304.6660310011357
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с [[Project Beta]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Beta). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 2168.303268000018
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -391,22 +393,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1648.7189810015261,
+      "wallClockMs": 1494.1016130000353,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -420,8 +422,8 @@
           "concepts": []
         },
         "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не выбирать теги. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с заголовком 'Project Beta'. | 'проект' — слишком общее слово, не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named project, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
-        "wallClockMs": 1648.7189810015261
+        "reasoning": "[classification] Заметка представляет собой краткую запись для триажа, связанную с [[Project Beta]] и упоминающую проект. | Выбираю папку Projects, так как заметка явно относится к проектной работе (Project Beta). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1494.1016130000353
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -436,22 +438,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1185.0598729997873,
+      "wallClockMs": 1421.847464999999,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -465,8 +467,8 @@
           "concepts": []
         },
         "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой короткую входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
-        "wallClockMs": 1185.0598729997873
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1421.847464999999
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -481,22 +483,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1460.6823440007865,
+      "wallClockMs": 1435.2179629999446,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -509,9 +511,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к конкретному проекту или области. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явной связи с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word for 'project' and discard it as a common term. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
-        "wallClockMs": 1460.6823440007865
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой краткую входящую запись для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic project reference are present.",
+        "wallClockMs": 1435.2179629999446
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -526,22 +528,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 1,
       "linksPrecision": 0,
       "linksRecall": 0,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 1,
         "linksPrecision": 0,
         "linksRecall": 0
       },
       "costUsd": 0,
-      "wallClockMs": 1433.2195429988205,
+      "wallClockMs": 1506.26674500003,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Resources",
         "tags": [],
         "links": [
           "Zettelkasten"
@@ -554,9 +556,9 @@
             "Zettelkasten"
           ]
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с концепцией Zettelkasten. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | Слово 'проект' слишком общее и не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. | Другие заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a general term. | No people or dates are mentioned. | Compile the remaining entity into the JSON output.",
-        "wallClockMs": 1433.2195429988205
+        "confidence": 0.7333333333333334,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с концепцией Zettelkasten и упоминающую проект. | Папка Resources выбрана, так как заметка ссылается на концепцию Zettelkasten, что относится к области знаний и методов, а не к активному проекту или архиву. | Теги не выбраны, так как предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | 'проект' слишком общее; Project Alpha и Project Beta не подтверждены явно. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a common word. | No people or dates are mentioned in the note. | Compile the remaining entity into the JSON output.",
+        "wallClockMs": 1506.26674500003
       },
       "gold": {
         "expectedFolder": "Resources",
@@ -572,22 +574,22 @@
   "results": [
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1485.7114470005035,
+      "wallClockMs": 2145.3861959999194,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -600,9 +602,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic project reference.",
-        "wallClockMs": 1485.7114470005035
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Key entities/topics: triage, Project Alpha, проект. | Project Alpha is explicitly referenced in the note. | No other existing title has a clear, explicit match. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — discard as a common word. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 2145.3861959999194
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -617,22 +619,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1302.3709559999406,
+      "wallClockMs": 1735.5490759999957,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -645,9 +647,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке как связанная заметка. | Слово 'проект' общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'проект' are present.",
-        "wallClockMs": 1302.3709559999406
+        "confidence": 0.85,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Выбираю папку Projects, так как заметка явно относится к проектной работе (Project Alpha). | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1735.5490759999957
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -662,22 +664,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1517.817642999813,
+      "wallClockMs": 1538.4473860000726,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -690,9 +692,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned in the note.",
-        "wallClockMs": 1517.817642999813
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1538.4473860000726
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -707,22 +709,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1285.0064189992845,
+      "wallClockMs": 1532.136737999972,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -735,9 +737,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к проекту или архиву. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явного совпадения с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
-        "wallClockMs": 1285.0064189992845
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с проектом Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Список тегов пуст, поэтому теги не назначаются. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1532.136737999972
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -752,22 +754,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1089.1609260011464,
+      "wallClockMs": 1263.8108370000264,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -780,9 +782,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует обработки и ещё не классифицирована. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 2, триаж заметки, Project Alpha, проект. | Для темы 'Project Alpha' есть явное совпадение с заголовком 'Project Alpha'. | Остальные темы не имеют явных совпадений с заголовками из списка; 'проект' — слишком общее слово. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic term for 'project' and discard it as a common word. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
-        "wallClockMs": 1089.1609260011464
+        "confidence": 0.8833333333333333,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно упомянут в заметке и совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (inside wiki-link). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic 'project' term are present.",
+        "wallClockMs": 1263.8108370000264
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -810,9 +812,9 @@
         "linksRecall": 0
       },
       "costUsd": 0,
-      "wallClockMs": 1347.7655069995672,
+      "wallClockMs": 1411.3410729999887,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "2025-03-15"
@@ -823,11 +825,13 @@
           "dates": [
             "2025-03-15"
           ],
-          "concepts": []
+          "concepts": [
+            "проект"
+          ]
         },
-        "confidence": 0.7000000000000001,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки (triage), со ссылкой на встречу и упоминанием проекта. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована по темам. | Список тегов пуст, поэтому выбрать теги невозможно. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект (неопределённый). | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общий, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Meeting 2025-03-15' as a date reference (2025-03-15). | Identify 'проект' as a generic concept mention, but it is a common noun and not a specific project name. | Discard generic words like 'note', 'triage', 'related', and the generic 'проект' since no specific project is named. | Retain only the explicit date entity.",
-        "wallClockMs": 1347.7655069995672
+        "confidence": 0.6333333333333333,
+        "reasoning": "[classification] Заметка представляет собой краткую входящую запись для триажа, связанную со встречей и упоминающую проект. | Папка Projects выбрана, так как заметка связана с проектной деятельностью и встречей по проекту. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: [[Meeting 2025-03-15]], проект. | Сопоставление: 'Meeting 2025-03-15' явно соответствует заголовку '2025-03-15'. | 'проект' слишком общее, не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Meeting 2025-03-15' as a date reference. | Identify 'проект' as a generic concept mention. | Discard generic words like 'note', 'triage', 'related', 'mentions'.",
+        "wallClockMs": 1411.3410729999887
       },
       "gold": {
         "expectedFolder": "Daily",
@@ -840,22 +844,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1444.4240050017834,
+      "wallClockMs": 1390.2701939999824,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -868,9 +872,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Beta' as a project reference (linked via [[Project Beta]]). | Identify 'проект' as a generic word meaning 'project' in Russian; it is a common noun, not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic 'project' term are present.",
-        "wallClockMs": 1444.4240050017834
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Beta. | Папка Projects подходит, так как заметка явно относится к проекту Project Beta. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности/темы заметки: Inbox Note 4, триаж заметки, Project Beta, проект. | Для темы 'Project Beta' есть точное совпадение с заголовком 'Project Beta'. | Тема 'проект' слишком общая и не даёт явного совпадения с другими заголовками. | Остальные заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference (linked). | Identify 'проект' as a generic word meaning 'project' — discard as a common/generic term. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1390.2701939999824
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -885,22 +889,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1304.6660310011357,
+      "wallClockMs": 2168.303268000018,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -913,9 +917,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.9166666666666666,
-        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не назначать теги. \n[links] Ключевые сущности: Project Beta, проект. | Project Beta явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
-        "wallClockMs": 1304.6660310011357
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой короткую входящую запись для триажа, связанную с [[Project Beta]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Beta). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 2168.303268000018
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -930,22 +934,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1648.7189810015261,
+      "wallClockMs": 1494.1016130000353,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Beta"
@@ -959,8 +963,8 @@
           "concepts": []
         },
         "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись для триажа, связанную с Project Beta. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Список тегов пуст, поэтому допустимо не выбирать теги. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с заголовком 'Project Beta'. | 'проект' — слишком общее слово, не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named project, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
-        "wallClockMs": 1648.7189810015261
+        "reasoning": "[classification] Заметка представляет собой краткую запись для триажа, связанную с [[Project Beta]] и упоминающую проект. | Выбираю папку Projects, так как заметка явно относится к проектной работе (Project Beta). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Beta, проект (общая тема). | Project Beta явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Beta' as a project reference. | Identify 'проект' as a generic term, not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic word 'проект' are present.",
+        "wallClockMs": 1494.1016130000353
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -975,22 +979,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1185.0598729997873,
+      "wallClockMs": 1421.847464999999,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -1004,8 +1008,8 @@
           "concepts": []
         },
         "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой короткую входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка явно требует триажа и ещё не классифицирована. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно совпадает с заголовком 'Project Alpha'. | 'проект' — слишком общее слово, не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
-        "wallClockMs": 1185.0598729997873
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка Projects выбрана, так как заметка явно относится к проекту Project Alpha. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект (общая тема). | Project Alpha явно упомянут в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с Project Beta. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Project Alpha' as a project reference (linked via [[Project Alpha]]). | Identify 'проект' as a generic word meaning 'project' — not a specific named entity, so discard it. | No people or dates are mentioned in the note. | No specific concepts beyond the generic term are present.",
+        "wallClockMs": 1421.847464999999
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -1020,22 +1024,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 0,
       "linksPrecision": 1,
       "linksRecall": 1,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 0,
         "linksPrecision": 1,
         "linksRecall": 1
       },
       "costUsd": 0,
-      "wallClockMs": 1460.6823440007865,
+      "wallClockMs": 1435.2179629999446,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Projects",
         "tags": [],
         "links": [
           "Project Alpha"
@@ -1048,9 +1052,9 @@
           "dates": [],
           "concepts": []
         },
-        "confidence": 0.8833333333333333,
-        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с Project Alpha. | Папка 00-Inbox подходит, так как заметка требует сортировки и ещё не отнесена к конкретному проекту или области. | Список тегов пуст, поэтому теги не выбраны. \n[links] Ключевые сущности: Project Alpha, проект. | Сопоставление с заголовками: 'Project Alpha' — явное совпадение по названию проекта. | 'проект' — общее слово, не даёт явной связи с 'Project Beta'. | Итог: одна явная ссылка. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference. | Identify 'проект' as a generic word for 'project' and discard it as a common term. | No people or dates are mentioned. | No specific concepts beyond the project reference are present.",
-        "wallClockMs": 1460.6823440007865
+        "confidence": 0.8166666666666665,
+        "reasoning": "[classification] Заметка представляет собой краткую входящую запись для триажа, связанную с [[Project Alpha]] и упоминающую проект. | Папка Projects выбрана, так как заметка явно относится к проектной работе (Project Alpha). | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Project Alpha, проект. | Project Alpha явно упоминается в заметке и совпадает с существующим заголовком. | Слово 'проект' слишком общее и не даёт явного совпадения с другими заголовками. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Project Alpha' as a project reference (wikilink). | Identify 'проект' as a generic word meaning 'project', not a specific named entity, so discard it. | No people or dates are mentioned. | No specific concepts beyond the generic project reference are present.",
+        "wallClockMs": 1435.2179629999446
       },
       "gold": {
         "expectedFolder": "Projects",
@@ -1065,22 +1069,22 @@
     },
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
-      "folderCorrect": false,
+      "folderCorrect": true,
       "tagsPrecision": 1,
       "tagsRecall": 1,
       "linksPrecision": 0,
       "linksRecall": 0,
       "quality": {
-        "folderCorrect": false,
+        "folderCorrect": true,
         "tagsPrecision": 1,
         "tagsRecall": 1,
         "linksPrecision": 0,
         "linksRecall": 0
       },
       "costUsd": 0,
-      "wallClockMs": 1433.2195429988205,
+      "wallClockMs": 1506.26674500003,
       "rawResult": {
-        "folder": "00-Inbox",
+        "folder": "Resources",
         "tags": [],
         "links": [
           "Zettelkasten"
@@ -1093,9 +1097,9 @@
             "Zettelkasten"
           ]
         },
-        "confidence": 0.9,
-        "reasoning": "[classification] Заметка представляет собой необработанную входящую запись, требующую сортировки и связанную с концепцией Zettelkasten. | Папка 00-Inbox подходит, так как заметка явно помечена как Inbox Note и требует триажа. | Теги не выбраны, поскольку предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | Слово 'проект' слишком общее и не даёт явного совпадения с 'Project Alpha' или 'Project Beta'. | Другие заголовки не связаны с содержанием заметки. \n[entities] Scan the note for named entities: people, projects, dates, concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a general term. | No people or dates are mentioned. | Compile the remaining entity into the JSON output.",
-        "wallClockMs": 1433.2195429988205
+        "confidence": 0.7333333333333334,
+        "reasoning": "[classification] Заметка представляет собой входящую заметку для триажа, связанную с концепцией Zettelkasten и упоминающую проект. | Папка Resources выбрана, так как заметка ссылается на концепцию Zettelkasten, что относится к области знаний и методов, а не к активному проекту или архиву. | Теги не выбраны, так как предоставленный список тегов пуст. \n[links] Ключевые сущности: Zettelkasten, проект. | Zettelkasten явно совпадает с заголовком 'Zettelkasten'. | 'проект' слишком общее; Project Alpha и Project Beta не подтверждены явно. \n[entities] Scan the note for named entities: people, projects, dates, and concepts. | Identify 'Zettelkasten' as a concept explicitly marked with [[Concept: ...]]. | Identify 'проект' as a generic word meaning 'project' with no specific name, so it is discarded as a common word. | No people or dates are mentioned in the note. | Compile the remaining entity into the JSON output.",
+        "wallClockMs": 1506.26674500003
       },
       "gold": {
         "expectedFolder": "Resources",
@@ -1111,34 +1115,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_1.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 304,
-      "costUsd": 0.000275,
-      "wallClockMs": 1484.50067400001,
+      "inputTokens": 611,
+      "outputTokens": 297,
+      "costUsd": 0.00027,
+      "wallClockMs": 2144.675825000042,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:48.404Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:02.887Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 113,
-          "wallClockMs": 1479.3541889991611
+          "inputTokens": 241,
+          "outputTokens": 107,
+          "wallClockMs": 1835.4615800000029
         },
         {
           "name": "links",
           "inputTokens": 226,
           "outputTokens": 69,
-          "wallClockMs": 1299.987669000402
+          "wallClockMs": 1496.3369099999545
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 122,
-          "wallClockMs": 1245.3833069987595
+          "outputTokens": 121,
+          "wallClockMs": 1975.934202000033
         }
       ],
       "useMessaging": false,
@@ -1147,34 +1151,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_10.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 319,
+      "inputTokens": 611,
+      "outputTokens": 321,
       "costUsd": 0.000284,
-      "wallClockMs": 1302.180707000196,
+      "wallClockMs": 1735.367503000074,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:49.709Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:04.626Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 109,
-          "wallClockMs": 1300.739457000047
+          "inputTokens": 241,
+          "outputTokens": 107,
+          "wallClockMs": 1182.0922489999793
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 75,
-          "wallClockMs": 1296.137735998258
+          "outputTokens": 83,
+          "wallClockMs": 1166.2604569999967
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 135,
-          "wallClockMs": 1293.1094060000032
+          "outputTokens": 131,
+          "wallClockMs": 1729.3613389999373
         }
       ],
       "useMessaging": false,
@@ -1183,34 +1187,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_11.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 292,
-      "costUsd": 0.000267,
-      "wallClockMs": 1517.7120420001447,
+      "inputTokens": 611,
+      "outputTokens": 297,
+      "costUsd": 0.00027,
+      "wallClockMs": 1537.3249830000568,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:51.227Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:06.166Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 105,
-          "wallClockMs": 1515.920745998621
+          "inputTokens": 241,
+          "outputTokens": 97,
+          "wallClockMs": 1329.8074110000161
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 79,
-          "wallClockMs": 1511.7534400001168
+          "outputTokens": 82,
+          "wallClockMs": 1296.9180660001002
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 108,
-          "wallClockMs": 1514.630073999986
+          "outputTokens": 118,
+          "wallClockMs": 1533.379535999964
         }
       ],
       "useMessaging": false,
@@ -1219,34 +1223,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_12.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 328,
-      "costUsd": 0.000289,
-      "wallClockMs": 1284.8804250005633,
+      "inputTokens": 611,
+      "outputTokens": 325,
+      "costUsd": 0.000287,
+      "wallClockMs": 1531.9316989999497,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:52.512Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:07.700Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 109,
-          "wallClockMs": 1272.0868480000645
+          "inputTokens": 241,
+          "outputTokens": 101,
+          "wallClockMs": 1152.1636690000305
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 96,
-          "wallClockMs": 1269.5703159999102
+          "outputTokens": 82,
+          "wallClockMs": 1361.8461550000357
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 123,
-          "wallClockMs": 1281.964677998796
+          "outputTokens": 142,
+          "wallClockMs": 1527.4376219999976
         }
       ],
       "useMessaging": false,
@@ -1255,34 +1259,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_2.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 338,
-      "costUsd": 0.000295,
-      "wallClockMs": 1089.0704110004008,
+      "inputTokens": 611,
+      "outputTokens": 311,
+      "costUsd": 0.000278,
+      "wallClockMs": 1263.631778000039,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:53.602Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:08.965Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 103,
-          "wallClockMs": 1088.2825980000198
+          "inputTokens": 241,
+          "outputTokens": 97,
+          "wallClockMs": 1263.4800950000063
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 118,
-          "wallClockMs": 1084.9313209988177
+          "outputTokens": 87,
+          "wallClockMs": 1225.4282039999962
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 117,
-          "wallClockMs": 1083.5126990005374
+          "outputTokens": 127,
+          "wallClockMs": 1222.3629680000013
         }
       ],
       "useMessaging": false,
@@ -1291,34 +1295,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_3.md",
       "engineId": "mas-parallel",
-      "inputTokens": 633,
-      "outputTokens": 394,
-      "costUsd": 0.000331,
-      "wallClockMs": 1347.6076650004834,
+      "inputTokens": 629,
+      "outputTokens": 348,
+      "costUsd": 0.000303,
+      "wallClockMs": 1411.1178780000191,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:54.950Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:10.378Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 251,
-          "outputTokens": 125,
-          "wallClockMs": 1329.1937990002334
+          "inputTokens": 247,
+          "outputTokens": 110,
+          "wallClockMs": 1350.5344210000476
         },
         {
           "name": "links",
           "inputTokens": 232,
-          "outputTokens": 110,
-          "wallClockMs": 1321.9705049991608
+          "outputTokens": 105,
+          "wallClockMs": 1388.9452680000104
         },
         {
           "name": "entities",
           "inputTokens": 150,
-          "outputTokens": 159,
-          "wallClockMs": 1343.2204979993403
+          "outputTokens": 133,
+          "wallClockMs": 1404.6622499999357
         }
       ],
       "useMessaging": false,
@@ -1327,34 +1331,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_4.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
+      "inputTokens": 611,
       "outputTokens": 346,
-      "costUsd": 0.0003,
-      "wallClockMs": 1444.309465000406,
+      "costUsd": 0.000299,
+      "wallClockMs": 1389.5899940000381,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:56.394Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:11.769Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 114,
-          "wallClockMs": 1302.1450160015374
+          "inputTokens": 241,
+          "outputTokens": 96,
+          "wallClockMs": 1308.6421170000685
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 90,
-          "wallClockMs": 1094.758887000382
+          "outputTokens": 129,
+          "wallClockMs": 1305.7148759999545
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 142,
-          "wallClockMs": 1441.542621999979
+          "outputTokens": 121,
+          "wallClockMs": 1385.2911769999191
         }
       ],
       "useMessaging": false,
@@ -1363,34 +1367,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_5.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 314,
-      "costUsd": 0.000281,
-      "wallClockMs": 1304.5028809998184,
+      "inputTokens": 611,
+      "outputTokens": 317,
+      "costUsd": 0.000282,
+      "wallClockMs": 2168.1256050000666,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:57.700Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:13.939Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 110,
-          "wallClockMs": 984.5419350005686
+          "inputTokens": 241,
+          "outputTokens": 109,
+          "wallClockMs": 1554.6970800000709
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 84,
-          "wallClockMs": 984.6606649998575
+          "outputTokens": 90,
+          "wallClockMs": 1244.6531840000534
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 120,
-          "wallClockMs": 1302.2137540001422
+          "outputTokens": 118,
+          "wallClockMs": 2164.721804999979
         }
       ],
       "useMessaging": false,
@@ -1399,34 +1403,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_6.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 321,
-      "costUsd": 0.000285,
-      "wallClockMs": 1648.024757001549,
+      "inputTokens": 611,
+      "outputTokens": 317,
+      "costUsd": 0.000282,
+      "wallClockMs": 1493.908585999976,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:11:59.348Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:15.435Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 112,
-          "wallClockMs": 1032.6426649987698
+          "inputTokens": 241,
+          "outputTokens": 107,
+          "wallClockMs": 1232.8243849999271
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 89,
-          "wallClockMs": 1030.294592000544
+          "outputTokens": 90,
+          "wallClockMs": 1231.4416339999298
         },
         {
           "name": "entities",
           "inputTokens": 144,
           "outputTokens": 120,
-          "wallClockMs": 1645.1224199999124
+          "wallClockMs": 1490.5668000000296
         }
       ],
       "useMessaging": false,
@@ -1435,34 +1439,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_7.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 304,
-      "costUsd": 0.000275,
-      "wallClockMs": 1184.9140439983457,
+      "inputTokens": 611,
+      "outputTokens": 316,
+      "costUsd": 0.000281,
+      "wallClockMs": 1421.5935419999296,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:12:00.534Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:16.858Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 94,
-          "wallClockMs": 1183.7680830005556
+          "inputTokens": 241,
+          "outputTokens": 97,
+          "wallClockMs": 1165.6710490001133
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 79,
-          "wallClockMs": 1183.9298370014876
+          "outputTokens": 88,
+          "wallClockMs": 1419.680318000028
         },
         {
           "name": "entities",
           "inputTokens": 144,
           "outputTokens": 131,
-          "wallClockMs": 1182.7925370000303
+          "wallClockMs": 1398.927611000021
         }
       ],
       "useMessaging": false,
@@ -1471,34 +1475,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_8.md",
       "engineId": "mas-parallel",
-      "inputTokens": 615,
-      "outputTokens": 321,
-      "costUsd": 0.000285,
-      "wallClockMs": 1460.5865219999105,
+      "inputTokens": 611,
+      "outputTokens": 317,
+      "costUsd": 0.000282,
+      "wallClockMs": 1435.0578990000067,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:12:01.995Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:18.295Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 245,
-          "outputTokens": 111,
-          "wallClockMs": 1063.8886860013008
+          "inputTokens": 241,
+          "outputTokens": 109,
+          "wallClockMs": 1434.4494890000205
         },
         {
           "name": "links",
           "inputTokens": 226,
-          "outputTokens": 94,
-          "wallClockMs": 1459.7344540003687
+          "outputTokens": 84,
+          "wallClockMs": 1387.4806749999989
         },
         {
           "name": "entities",
           "inputTokens": 144,
-          "outputTokens": 116,
-          "wallClockMs": 1062.1133129987866
+          "outputTokens": 124,
+          "wallClockMs": 1429.1525769999716
         }
       ],
       "useMessaging": false,
@@ -1507,34 +1511,34 @@
     {
       "notePath": "datasets/synthetic_vault/00-Inbox/inbox_9.md",
       "engineId": "mas-parallel",
-      "inputTokens": 627,
-      "outputTokens": 372,
-      "costUsd": 0.000317,
-      "wallClockMs": 1433.1298660002649,
+      "inputTokens": 623,
+      "outputTokens": 346,
+      "costUsd": 0.000301,
+      "wallClockMs": 1506.1133859999245,
       "quality": "unknown",
-      "timestamp": "2026-10-21T21:12:03.429Z",
-      "runId": "c629af7e-c44a-4eec-98bc-eba804306db9",
+      "timestamp": "2026-10-22T08:37:19.802Z",
+      "runId": "24c70167-2167-43cb-ae64-3204ea365a66",
       "configHash": "92a894e93dc293ba1b503fb078943cf5a2713e056a26e1601e3b3a0a40278dfb",
       "model": "deepseek-chat",
       "seed": 42,
       "agentBreakdown": [
         {
           "name": "classification",
-          "inputTokens": 249,
-          "outputTokens": 118,
-          "wallClockMs": 1432.6270059999079
+          "inputTokens": 245,
+          "outputTokens": 128,
+          "wallClockMs": 1505.9968990000198
         },
         {
           "name": "links",
           "inputTokens": 230,
-          "outputTokens": 120,
-          "wallClockMs": 1432.0696709994227
+          "outputTokens": 80,
+          "wallClockMs": 1248.7084160000086
         },
         {
           "name": "entities",
           "inputTokens": 148,
-          "outputTokens": 134,
-          "wallClockMs": 1430.3166480008513
+          "outputTokens": 138,
+          "wallClockMs": 1490.6271410000045
         }
       ],
       "useMessaging": false,
@@ -1542,7 +1546,7 @@
     }
   ],
   "summary": {
-    "folderAcc": 0,
+    "folderAcc": 0.9166666666666666,
     "tagsP": 1,
     "tagsR": 0.16666666666666666,
     "linksP": 0.8333333333333334,
@@ -1551,8 +1555,8 @@
       "n": 12,
       "failed": 0,
       "folderAcc": {
-        "mean": 0,
-        "std": 0
+        "mean": 0.9166666666666666,
+        "std": 0.28867513459481287
       },
       "tagsPrecision": {
         "mean": 1,
@@ -1575,8 +1579,8 @@
         "std": 0
       },
       "wallClockMs": {
-        "mean": 1375.3836395836745,
-        "std": 153.73191699001254
+        "mean": 1586.8898794999986,
+        "std": 288.6667904827216
       }
     }
   }
